@@ -1,0 +1,13 @@
+.container_carrousel{
+	width: 75%;
+}
+
+.carousel_caption h3:first-child {
+	animation-delay: 1s;
+}
+.carousel_caption img{
+	animation-delay: 2s;
+}
+.carousel_caption button {
+	animation-delay: 3s;
+}
