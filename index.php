@@ -34,11 +34,12 @@
 	<!-- banner -->
 	<div class="banner">
 		<div class="header">
-			<div class="container">
+			<div class="container container_header">
 				<div class="header-left">
 					<div class="w3layouts-logo">
 						<h1>
-							<a href="index.php"><img src="static/images/mpitca.png"  /></a>
+                                                    <a class="logo_web" href="index.php"><img src="static/images/mpitca.png"  /></a>
+                                                        <a class="logo_mobil" href="index.php"><img src="static/images/mpitca_mobile.png"  /></a>
 						</h1>
 					</div>
 					<!--<div class="agileinfo-social-grids">
@@ -82,25 +83,25 @@
 			    <!-- Wrapper for slides -->
 			    <div class="carousel-inner" style="display: block" role="listbox">
 			
-			      <div class="item active" style="margin-top: 21px; height: 190px">
-			        <img class="carousel_caption" src="static/images/redes.png" style="display: inline-block" data-animation="animated bounceInLeft" >
-			        <div class="carousel_caption"  style="display: inline-block;width: 54%;vertical-align: middle">
+			      <div class="item active sub_container_carrousel">
+			        <img class="display_inline image_none" src="static/images/redes.png" >
+                                <div   class="container_carrousel_text">
 			          <h3  data-animation="animated bounceInLeft">Instalación y Configuración de Plataformas de Red</h3>
 			          <p>MPIT te ayuda a la configuración e instalación de equipos Cableado Estructurado, Routers, Switches, Firewalls, APs y muchos mas.</p>
 			        </div>
 			      </div>
 			
-			      <div class="item carousel_caption" style="margin-top: 21px; height: 190px">
-			        <div class=""  style="display: inline-block;width: 54%;vertical-align: middle">
+			      <div class="item carousel_caption sub_container_carrousel">
+			        <div class="container_carrousel_text" >
 			          <h3>Instalación y Configuración de Plataformas de Windows y Linux</h3>
 			          <p>Somos expertos en la instalación y configuración servidores, Virtualización y mucho más.</p>
 			        </div>
-			        <img src="static/images/instalacion.png" style="display: inline-block">
+			        <img class="display_inline image_none" src="static/images/instalacion.png" >
 			      </div>
 			    
-			      <div class="item " style="margin-top: 21px; height: 190px">
-			        <img src="static/images/telefonia.png"  style="display: inline-block" >
-			        <div class=""  style="display: inline-block;width: 54%;vertical-align: middle">
+			      <div class="item  sub_container_carrousel" >
+                                  <img src="static/images/telefonia.png" class="display_inline image_none"   >
+			        <div class="container_carrousel_text">
 			          <h3>Instalación y Configuración de Plataformas de Telefonía IP y Tradicional</h3>
 			          <p>Necesitas comunicarte con clientes nacionales o internacionales, MPIT te instala tu Telefonía IP o Tradicional.</p>
 			        </div>
@@ -109,12 +110,12 @@
 			    </div>
 			
 			    <!-- Left and right controls -->
-			    <a class="left " role="button" data-slide="prev" style="background-image: none; float: left; color:#FFFFFF">
-			      <span style="position: absolute;top: 23%;z-index: 5;display: inline-block; font-size: 35px;  margin-right: 20px" aria-hidden="true"><</span>
+			    <a class="left container_carrousel_button_left" role="button" data-slide="prev">
+                                <span class="carrousel_previous" aria-hidden="true"><</span>
 			      <span class="sr-only">Previous</span>
 			    </a>
-			    <a class="right " role="button" data-slide="next" style="background-image: none; float: right; color:#FFFFFF">
-			      <span style="position: absolute;top: 23%;z-index: 5;display: inline-block; font-size: 35px; margin-left: 20px" aria-hidden="true">></span>
+			    <a class="right container_carrousel_button_right" role="button" data-slide="next" >
+                                <span class="carrousel_next" aria-hidden="true">></span>
 			      <span class="sr-only">Next</span>
 			    </a>
 			    <ol class="carousel-indicators">
@@ -123,28 +124,21 @@
 			      <li data-target="#myCarousel" data-slide-to="2" class="item3"></li>
 			    </ol>
 			  </div>
-				<!--<h3>A new generation in learn to</h3>
-				<h2>swim classes</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere tempor quam, vitae vestibulum lacus placerat non. Donec volutpat odio sed neque molestie elementum quis nec nisi. Phasellus elit leo, lobortis non massa in, elementum maximus urna.</p>
-				<!--<div class="w3-button">
-					<a href="#" class="hvr-sweep-to-bottom" data-toggle="modal" data-target="#myModal">Read More</a>
-				</div>-->
+			
 			</div>
 		</div>
 	</div>
-	<!-- //banner -->
-	<!-- about -->
 	<hr style="border-color: rgb(0, 42, 117); " width=75%/>
 	<div class="about" id="about">
 		<div class="container">
 			<div class="about-heading">
-				<h3 style="margin: 0 auto; text-align: center; width: 100%; font-size: 23px;text-transform: none;" >En nuestra empresa se ejercen las Mejores Prácticas en:</h3>
-				<p style="text-align: center; font-size: 18px; text-transform:none;margin-top: 10px;" >Sistema de Información e Infraestructura </p>
-				<p style="text-align: center; font-size: 18px; text-transform:none; margin-top: 5px;" >Para crecer y hacer crecer a nuestros clientes</p>
+                            <h3 class="title_firt" >En nuestra empresa se ejercen las Mejores Prácticas en:</h3>
+                            <p class="title_second" >Sistema de Información e Infraestructura </p>
+                            <p class="title_third" >Para crecer y hacer crecer a nuestros clientes</p>
 			</div>
 			<div style="margin-top: 11px;" data-aos="zoom-out-up">
-				<div style="width: 100%; display: block;">
-					<div class="agileits-icon-grid" style="display: inline-block; width: 49%; text-align: justify; float: left; margin-top: 32px;">
+                            <div class="display_block_width">
+					<div class="agileits-icon-grid container_object">
 						<div class="icon-left hvr-radial-out">
 							<i class="fa fa-cog" aria-hidden="true"></i>
 						</div>
@@ -154,7 +148,7 @@
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					<div class="agileits-icon-grid" style="display: inline-block; width: 49%; text-align: justify;float: left" >
+					<div class="agileits-icon-grid container_object"  >
 						<div class="icon-left hvr-radial-out">
 							<i class="fa fa-desktop" aria-hidden="true"></i>
 						</div>
@@ -164,7 +158,7 @@
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					<div class="agileits-icon-grid" style="width: 55%;margin: 0 auto; text-align: justify;">
+					<div class="agileits-icon-grid container_services_down">
 						<div class="icon-left hvr-radial-out">
 							<i class="fa fa-paper-plane" aria-hidden="true"></i>
 						</div>
@@ -179,22 +173,22 @@
 		</div>
 	</div>
 	<!--<hr style="border-color: rgb(0, 42, 117); " width=75%/>-->
-	<div class="about" id="about" style="background-image: url('static/images/background.png'); background-size: cover; background-color: #A0B9B9;">
+        <div class="about container_blue" id="about" style="background-image: url('static/images/background.png')">
 		<div class="container">
 			
-				<div class="" style="width: 48%; display: inline-block;float: left; text-align: justify; color: #ffffff;" data-aos="fade-right" >
+				<div class="container_left_mision" data-aos="zoom-in-down" >
 					<h3 style="text-align: center">Misión</h3>
-					<div style="width: 100%;display: inline-block" >
-						<div style="width: 100%;display: inline-block" >
+                                        <div class="display_inline_block_width" >
+						<div class="display_inline_block_width" >
 							<p>MPIT es una empresa proveedora de servicios de IT, fundada con el propósito de asegurar el uso eficiente de la plataforma de computación de nuestros clientes, a través del uso de las Mejores Prácticas existentes en el área. El producto de este esfuerzo es garantizar el continuo crecimiento de MPIT y el retorno en la inversión de nuestros accionistas, este éxito será compartido con nuestros clientes, aliados comerciales y proveedores.</p>
 						</div>
 					</div>
 					
 				</div>
-				<div class=""  style="width: 48%; display: inline-block; float: right; text-align: justify; color: #ffffff;" data-aos="fade-left">
+				<div class="container_left_vision" data-aos="zoom-in-down">
 					<h3 style="text-align: center">Visión</h3>
-					<div style="width: 100%; display: block;">
-						<div style="width: 100%;display: inline-block" >
+					<div class="display_inline_block_width">
+						<div class="display_inline_block_width" >
 							<p>Seremos una empresa sólida y confiable para nuestros clientes, primeros en satisfacer sus necesidades y líderes en la aplicación de las Mejores Prácticas en IT.</p>
 						</div>
 					</div>	
@@ -205,56 +199,56 @@
 	<!--<hr style="border-color: rgb(0, 42, 117); " width=75%/>-->
 	<div class="about" id="about">
 		<div class="container" data-aos="zoom-in-up">
-				<div class="" style="width: 70%; display: inline-block;float: left" >
+				<div class="container_services" style="" >
 					<h3>Servicios:</h3>
-					<div style="width: 49%;display: inline-block" >
-						<div style="width: 100%;display: inline-block" >
+                                        <div class="container_divided" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Usuario Final</strong></a></h5>
 							<p>MPIT estandariza el ambiente de escritorio para usuarios finales.</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Escritorio de Ayuda</strong></a></h5>
 							<p>Optenga la ayuda que usted necesita rápido.</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Soporte de Sitio</strong></a></h5>
 							<p>Cuando nuestro cliente necesita soporte de sitio, nuestro servicio de campo estará allí para ayudarlo</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Mantenimiento de Hardware</strong></a></h5>
 							<p>MPIT le prepara los planes de mantenimiento preventivo y correctivo.</p>
 						</div>
 					</div>
-					<div style="width: 49%;display: inline-block" >
-						<div style="width: 100%;display: inline-block" >
+					<div class="container_divided" >
+                                                <div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Soporte de Infraestructura</strong></a></h5>
 							<p>Minimice los riesgo de su infraestructura de escritorio.</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Gerencia del Ciclo de Vida de su Tecnología</strong></a></h5>
 							<p>MPIT le llevará el control de inventario de su infraestructura de tecnología.</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Seguridad</strong></a></h5>
 							<p>Prevención es la clave, por esta razón MPIT le ofrece este servicio.</p>
 						</div>
-						<div style="width: 100%;display: inline-block" >
+						<div class="display_inline_block_width" >
 							<h5><a><strong>Servicio de Consultoria y Proyecto</strong></a></h5>
 							<p>MPIT sirve a su empresa en la definición de arquitectura hardware/software.</p>
 						</div>
 					</div>
 					
 				</div>
-				<div class=""  style="width: 29%; display: inline-block;">
+				<div class="container_certificate">
 					<h3 style="text-align: center">Certificados en:</h3>
-					<div style="width: 100%; display: block;">
-						<div style="display: inline-block; width: 100%;text-align: center; margin-bottom: 15px">
+                                        <div class="display_block_width">
+                                                <div class="container_img_certificate" >
 							<img src="static/images/cisco.png" />
 						</div>
-						<div style="display: inline-block; width: 100%;text-align: center; margin-bottom: 15px">
+						<div class="container_img_certificate" >
 							<img src="static/images/itil.jpg" />
 						</div>
-						<div style="display: inline-block; width: 100%;text-align: center; margin-bottom: 15px">
+						<div class="container_img_certificate" >
 							<img src="static/images/pmp.jpg" />
 						</div>
 					</div>
@@ -979,6 +973,8 @@
 		</div>
 	</div>-->
 <script src="static/js/responsiveslides.min.js"></script>
+
+
 <script type="text/javascript" src="static/js/move-top.js"></script>
 <script type="text/javascript" src="static/js/easing.js"></script>
 <script type="text/javascript" src="static/js/aos.js"></script>

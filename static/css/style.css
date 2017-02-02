@@ -14,11 +14,88 @@ html, body{
 .labelHide{
 	display: none;
 }
+.display_block_width{
+    width: 100%; 
+    display: block;
+}
+.display_inline_block_width{
+    width: 100%; 
+    display: inline-block;
+}
+.logo_mobil{
+    display: none;
+}
+/*-- titles --*/
+.title_firt{
+    margin: 0 auto !important; 
+    text-align: center; 
+    width: 100%; 
+    font-size: 23px !important;
+    text-transform: none !important;
+}
+.title_second{
+    text-align: center; 
+    font-size: 18px !important; 
+    text-transform:none !important;
+    margin-top: 10px !important;
+}
+.title_third{
+    text-align: center; 
+    font-size: 18px !important; 
+    text-transform:none !important; 
+    margin-top: 5px !important;
+}
+/*-- Carrousel --*/
+.container_carrousel{
+	width: 75% ;
+}
+.sub_container_carrousel{
+    margin-top: 21px; 
+    height: 190px
+}
+.container_carrousel_text{
+    display: inline-block;
+    width: 54%;
+    vertical-align: middle
+}
+.container_carrousel_button_left{
+    background-image: none; 
+    float: left; 
+    color:#FFFFFF
+}
+.carrousel_previous{
+    position: absolute;
+    top: 23%;
+    z-index: 5;
+    display: inline-block; 
+    font-size: 35px;  
+    margin-right: 20px
+}
+.container_carrousel_button_right{
+    background-image: none; 
+    float: right; 
+    color:#FFFFFF
+}
+.carrousel_next{
+    position: absolute;
+    top: 23%;
+    z-index: 5;
+    display: inline-block;
+    font-size: 35px; 
+    margin-left: 20px
+}
 /*-- banner --*/
 .banner{
  	
     background-size: cover;
     padding: 0 0 4em 0;
+}
+.display_inline{
+    display: inline-block !important;
+}
+.container_divided{
+    width: 49%;
+    display: inline-block
 }
 /*-- header-left --*/
 .header {
@@ -1177,17 +1254,36 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 		height: 175px;
 	}
 }
-@media(max-width:1080px){
+@media(max-width:1200px){
 	.header-left {
-		float: left;
-		width: 40%;
+            width: 100%;
 	}
+        .w3layouts-logo{
+            text-align: -webkit-center;
+            width: 100%;
+        }
+        .top-nav{
+            width: 100%;
+            text-align: center;
+        }
+        .carrousel_next{
+            top: 28%;
+        }
+        .carrousel_previous{
+            top: 28%;
+            margin-left: -40px;
+        }
+        .container_carrousel {
+            width: 85%;
+        }
+        .icon-right{
+            width: 75%;
+        }
+}
+@media(max-width:1080px){
+	
 	.banner {
 		background-size: cover;
-	}
-	.icon-right {
-		float: left;
-		width: 78%;
 	}
 	.captn {
 		width: 235px;
@@ -1222,6 +1318,16 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	}
 }
 @media(max-width:991px){
+        .icon-right {
+            width: 72%;
+            float: none;
+        }
+        .container_services_down{
+            width: 79%;
+        }
+        .container_header{
+            width: 100%;
+        }
 	.header-left {
 	    float: none;
 		width: 100%;
@@ -1298,6 +1404,12 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.w3-agileits-services-left {
 		min-height: 350px;
 	}
+        .carrousel_previous{
+            top: 32%;
+        }
+        .carrousel_next {
+            top: 32%;
+        }
 }
 @media(max-width:768px){
 	.w3-button a {
@@ -1307,11 +1419,42 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 		width: 165px;
 		height: 103px;
 	}
+        .top-nav {
+            width: 49%;
+            display: inline-block;
+        }
+        .header-left{
+            width: 49%;
+            display: inline-block;
+        }
+        .carrousel_next{
+            top: 25%;
+        }
+        .carrousel_previous{
+            top: 25%;
+        }
+        .title_firt{
+            width: 85%;
+        }
+        .icon-right {
+            width: 88%;
+        }
+        .image_none{
+            display: none !important;
+        }
+        .container_certificate{
+            width: 100%;
+        }
+        .icon-right{
+            width: 94%;
+        }
+        .container_carrousel_text{
+            width: 84%;
+        }
 }
 @media(max-width:736px){
 	.navbar-default .navbar-toggle {
 		border-color: #fff;
-		float: none;
 		margin: 0;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
@@ -1417,6 +1560,17 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.callbacks_nav.prev {
 		left: 225px;
 	}
+        .title_firt {
+            width: 95%;
+        }
+        .hvr-radial-out{
+            display: none !important;
+        }
+        .container_divided{
+            width: 100%;
+            display: inline-block;
+            text-align: justify;
+        }
 }
 @media(max-width:480px){
 	.banner-info h3:before {
@@ -1527,6 +1681,23 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 		margin: 2em 0 0 0;
 	}
 }
+@media(max-width:442px){
+    .title_firt{
+        font-size: 20px !important;
+    }
+    .title_second{
+        font-size: 16px !important;
+    }
+    .title_third{
+        font-size: 16px !important;
+    }
+    .logo_mobil{
+        display: block;
+    }
+    .logo_web{
+        display: none;
+    }
+}
 @media(max-width:414px){
 	.banner-info h3 {
 		font-size: 1.2em;
@@ -1631,6 +1802,24 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.subscribe-grid {
 		width: 85%;
 	}
+        .footer-list{
+            display: none !important;
+        }
+        .container_carrousel_button_right{
+            display: none;
+        }
+        .container_carrousel_button_left{
+            display: none;
+        }
+        .title_firt{
+            font-size: 18px !important;
+        }
+        .title_second{
+            font-size: 14px !important;
+        }
+        .title_third {
+            font-size: 14px !important;
+        }
 }
 @media(max-width:320px){
 	.w3layouts-logo h1 a {

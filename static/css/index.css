@@ -1,13 +1,69 @@
-.container_carrousel{
-	width: 75%;
+.container_object{
+    display: inline-block; 
+    width: 49%; 
+    text-align: justify; 
+    float: left; 
+    margin-top: 32px;
 }
-
-.carousel_caption h3:first-child {
-	animation-delay: 1s;
+.container_services_down{
+    width: 55%;
+    margin: 0 auto; 
+    text-align: justify;
 }
-.carousel_caption img{
-	animation-delay: 2s;
+.container_blue{
+    background-size: cover; 
+    background-color: #A0B9B9;
 }
-.carousel_caption button {
-	animation-delay: 3s;
+.container_left_mision{
+    width: 48%; 
+    display: inline-block;
+    float: left; 
+    text-align: justify; 
+    color: #ffffff;
+}
+.container_left_vision{
+    width: 48%; 
+    display: inline-block; 
+    float: right; 
+    text-align: justify;
+    color: #ffffff;
+}
+.container_services{
+    width: 70%; 
+    display: inline-block;
+    float: left
+}
+.container_certificate{
+    width: 29%; 
+    display: inline-block;
+}
+.container_img_certificate{
+    display: inline-block; 
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 15px
+}
+@media(max-width:768px){
+    .container_services{
+        width: 100%;
+    }
+    .container_certificate{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .container_object{
+        width: 100%;
+        text-align: center;
+    }
+    .container_services_down{
+        width: 100%;
+        text-align: center;
+    }
+    .container_left_vision{
+        width: 100%;
+    }
+    .container_left_mision{
+        width: 100%;
+    }
 }
