@@ -3,32 +3,33 @@
 	
 ?>
 <html lang="en">
+
 <head>
 <title>MPITCA</title>
-		<meta name="tatuaje" content="pagina de tatuajes en venezuela">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!-- bootstrap-css -->
-		<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-		<!--// bootstrap-css -->
-		<!-- css -->
-		<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
-		<!--// css -->
-		<!-- font-awesome icons -->
-		<link href="static/css/font-awesome.css" rel="stylesheet">
-		<!-- //font-awesome icons -->
-		<!-- font -->
-		<!--<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>-->
-		<!-- //font -->
-		<script src="static/js/jquery-1.11.1.min.js"></script>
-		<script src="static/js/bootstrap.js"></script>
-		<!-- light-box -->
-		<link rel="stylesheet" href="static/css/lightbox.css">
-		<!-- //light-box -->
-		<script src="static/js/SmoothScroll.min.js"></script>
-		<link rel="stylesheet" href="static/css/aos.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="static/css/index.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <!--<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <!-- //font -->
+    <script src="static/js/jquery-1.11.1.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <!-- light-box -->
+    <script src="static/js/SmoothScroll.min.js"></script>
+    <link rel="stylesheet" href="static/css/aos.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="static/css/index.css" type="text/css" media="all" />
 </head>
 <body>
 	<!-- banner -->
@@ -86,7 +87,7 @@
 			      <div class="item active sub_container_carrousel">
 			        <img class="display_inline image_none" src="static/images/redes.png" >
                                 <div   class="container_carrousel_text">
-			          <h3  data-animation="animated bounceInLeft">Instalación y Configuración de Plataformas de Red</h3>
+			          <h3  >Instalación y Configuración de Plataformas de Red</h3>
 			          <p>MPIT te ayuda a la configuración e instalación de equipos Cableado Estructurado, Routers, Switches, Firewalls, APs y muchos mas.</p>
 			        </div>
 			      </div>
