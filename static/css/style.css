@@ -25,6 +25,49 @@ html, body{
 .logo_mobil{
     display: none;
 }
+.container_servicios{
+	width: 97%; 
+	background-color: #ffffff; 
+	margin: 0 auto
+}
+.banner_interno{
+	padding-bottom: 25px !important;
+}
+.title_serivicios{
+	padding-top: 20px; 
+	padding-top: 20px; 
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.linea_degradada_derecha{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(46%, rgba(19,63,84,0.96)), color-stop(100%, rgba(19,63,84,0.92)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#133f54', GradientType=1 );
+	width: 69%;
+	display: inline-block;
+	height: 6px;
+	margin-bottom: 5px;
+}
+.linea_degradada_izquierda{
+	background: rgba(23,75,100,1);
+	background: -moz-linear-gradient(left, rgba(23,75,100,1) 0%, rgba(255,255,255,0.49) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(23,75,100,1)), color-stop(100%, rgba(255,255,255,0.49)));
+	background: -webkit-linear-gradient(left, rgba(23,75,100,1) 0%, rgba(255,255,255,0.49) 100%);
+	background: -o-linear-gradient(left, rgba(23,75,100,1) 0%, rgba(255,255,255,0.49) 100%);
+	background: -ms-linear-gradient(left, rgba(23,75,100,1) 0%, rgba(255,255,255,0.49) 100%);
+	background: linear-gradient(to right, rgba(23,75,100,1) 0%, rgba(255,255,255,0.49) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174b64', endColorstr='#ffffff', GradientType=1 );
+	width: 10%;
+	display: inline-block;
+	height: 6px;
+	margin-bottom: 5px;
+}
 /*-- titles --*/
 .title_firt{
     margin: 0 auto !important; 
