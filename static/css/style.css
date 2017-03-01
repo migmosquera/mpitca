@@ -40,6 +40,10 @@ html, body{
 	display: inline-block;
 	text-align: center;
 }
+.textInformation{
+    text-align: justify; 
+    font-size: 15px
+}
 .linea_degradada_derecha{
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(19,63,84,0.96) 46%, rgba(19,63,84,0.92) 100%);
@@ -53,6 +57,8 @@ html, body{
 	display: inline-block;
 	height: 6px;
 	margin-bottom: 5px;
+        float: right;
+        margin-top: 50px;
 }
 .linea_degradada_izquierda{
 	background: rgba(23,75,100,1);
@@ -67,6 +73,7 @@ html, body{
 	display: inline-block;
 	height: 6px;
 	margin-bottom: 5px;
+        margin-top: 50px;
 }
 /*-- titles --*/
 .title_firt{
@@ -983,7 +990,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 .modal-body p{
     margin: 1em 0 0 0;
     font-size: .875em;
-    color: #999999;
+    color: #404040;
     line-height: 1.8em;
 }
 .news-left-top-text a:focus {
@@ -1322,6 +1329,10 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
         .icon-right{
             width: 75%;
         }
+        
+        .title_serivicios{
+            font-size: 20px;
+        }
 }
 @media(max-width:1080px){
 	
@@ -1433,6 +1444,13 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.subscribe-grid button.btn1 {
 		height: 50px;
 	}
+        
+        .linea_degradada_derecha{
+                width: 60%;
+        }
+        .title_serivicios{
+                width: 28%;
+        }
 }
 @media(max-width:800px){
 	.captn {
@@ -1493,6 +1511,9 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
         }
         .container_carrousel_text{
             width: 84%;
+        }
+        .container_title_services{
+            font-size: 16px;
         }
 }
 @media(max-width:736px){
@@ -1569,6 +1590,21 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.contact-form input[type="email"] {
 		margin: 0 0 1.5em 0!important;
 	}
+        .linea_degradada_derecha{
+            width: 30%
+        }
+        .title_serivicios{
+            width: 39%;
+            text-align: center;
+        }
+        .linea_degradada_izquierda{
+            width: 30%
+        }
+}
+@media(max-width:680px){
+    .tab_service_Hardware{
+        height: 44px !important;
+    }
 }
 @media(max-width:600px){
 	.banner-info h3 {
@@ -1613,6 +1649,21 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
             width: 100%;
             display: inline-block;
             text-align: justify;
+        }
+        .textInformation{
+            font-size: 13px
+        }
+}
+@media(max-width:510px){
+        .linea_degradada_derecha{
+            width: 25%
+        }
+        .title_serivicios{
+            width: 48%;
+            text-align: center;
+        }
+        .linea_degradada_izquierda{
+            width: 25%
         }
 }
 @media(max-width:480px){
@@ -1723,6 +1774,9 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.agileinfo-team-grids {
 		margin: 2em 0 0 0;
 	}
+        .tab_service_Mantenimiento{
+            height: 44px !important;
+        }
 }
 @media(max-width:442px){
     .title_firt{
@@ -1739,6 +1793,9 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
     }
     .logo_web{
         display: none;
+    }
+    .tab_service_Antivirus{
+        height: 44px !important;
     }
 }
 @media(max-width:414px){
@@ -1805,6 +1862,16 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	.callbacks_nav.next {
 		right: 70px;
 	}
+         .linea_degradada_derecha{
+            width: 20%
+        }
+        .title_serivicios{
+            width: 58%;
+            text-align: center;
+        }
+        .linea_degradada_izquierda{
+            width: 20%
+        }
 }
 @media(max-width:375px){
 	.w3layouts-logo h1 a {
@@ -1862,6 +1929,15 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
         }
         .title_third {
             font-size: 14px !important;
+        }
+        .tab_service_Site{
+            height: 44px !important;
+        }
+        .tab_service_Mantenimiento{
+            height: 60px !important;
+        }
+        .tab_service_Hardware{
+             height: 60px !important;
         }
 }
 @media(max-width:320px){
