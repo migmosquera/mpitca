@@ -52,8 +52,8 @@
 							<ul class="nav navbar-nav">
 								<li><a  href="index.php">Home</a></li>
 								<li><a  href="servicios.php" class="scroll">Servicios</a></li>
-								<li><a href="" class="scroll">Beneficios</a></li>
-								<li><a href="" class="scroll">Sobre Nosotros</a></li>	
+								<li><a href="beneficio.php" class="scroll">Beneficios</a></li>
+								<li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
 								<li><a href="" class="scroll">Poyectos Realizados</a></li>
 								<li><a class="active" href="contactenos.php" class="scroll">Contactenos</a></li>
 							</ul>
@@ -150,8 +150,8 @@
 					</div>
 					<div class="agile-footer-grid" style="display: inline-block; width: 32%;float: left;">
 						<h3>Contactenos</h3>
-						<div id="contJormos" style="color: #A7A5A5; cursor: pointer; margin-top: 15px;" ><a href="contactenos.php" style="color: #c0c0c0;;border: none;background: none;" >Jorge Mosquera</a></div>
-						<div id="contCharles" style="color: #A7A5A5; cursor: pointer; margin-top: 15px;"><a href="contactenos.php" style="color: #c0c0c0;;border: none;background: none;" >Charles Chaderton</a></div>
+                                                <div id="contJormos" style="color: #A7A5A5; cursor: pointer; margin-top: 15px;" ><a href="contactenos.php" class="footer_contact_me" >Jorge Mosquera</a></div>
+						<div id="contCharles" style="color: #A7A5A5; cursor: pointer; margin-top: 15px;"><a href="contactenos.php" class="footer_contact_me" >Charles Chaderton</a></div>
 					</div>
 				</div>
 			</div>
