@@ -17,6 +17,7 @@
         <!--// css -->
         <!-- font-awesome icons -->
         <link href="static/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="all" />
         <!-- //font-awesome icons -->
         <!-- font -->
         <!--<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -48,9 +49,9 @@
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 </ul>
                         </div>-->
-              
+
                     </div>
-                    
+
                     <nav class="navbar navbar-default top-nav">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,7 +68,7 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li><a class="active" href="index.html">Home</a></li>
+                                    <li><a class="active" href="index.php">Home</a></li>
                                     <li><a href="servicios.php" class="scroll">Servicios</a></li>
                                     <li><a href="beneficio.php" class="scroll">Beneficios</a></li>
                                     <li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
@@ -82,10 +83,10 @@
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <div class="banner-info banner">
+            <!--<div class="banner-info banner">
                 <div id="myCarousel" class="container container_carrousel slide">
 
-                    <!-- Wrapper for slides -->
+                   
                     <div class="carousel-inner" style="display: block" role="listbox">
 
                         <div class="item active sub_container_carrousel">
@@ -114,7 +115,7 @@
 
                     </div>
 
-                    <!-- Left and right controls -->
+                    
                     <a class="left container_carrousel_button_left" role="button" data-slide="prev">
                         <span class="carrousel_previous" aria-hidden="true"><</span>
                         <span class="sr-only">Previous</span>
@@ -130,6 +131,20 @@
                     </ol>
                 </div>
 
+            </div>-->
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img class="display_inline image_none" src="static/images/redes.png" >
+                    </li>
+                    <li>
+                         <img class="display_inline image_none" src="static/images/instalacion.png" >
+                    </li>
+                    <li>
+                        <img src="static/images/telefonia.png" class="display_inline image_none"   >
+                    </li>
+                   
+                </ul>
             </div>
         </div>
     </div>
@@ -308,6 +323,7 @@
     <script type="text/javascript" src="static/js/easing.js"></script>
     <script type="text/javascript" src="static/js/aos.js"></script>
     <script type="text/javascript" src="static/js/animateCarrousel.js"></script>
+    <script type="text/javascript" src="static/js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
     <script type="text/javascript">
         /*jQuery(document).ready(function($) {
