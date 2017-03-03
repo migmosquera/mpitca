@@ -49,6 +49,11 @@ html, body{
 	display: inline-block;
 	text-align: center;
 }
+.contact-footer{
+    display: inline-block; 
+    width: 32%;
+    float: left;
+}
 .textInformation{
     text-align: justify; 
     font-size: 15px
@@ -147,7 +152,6 @@ html, body{
 .banner{
  	
     background-size: cover;
-    padding: 0 0 4em 0;
 }
 .display_inline{
     display: inline-block !important;
@@ -231,10 +235,10 @@ html, body{
 	float:right;
 	margin: 1.5em 0 0 0;
 }
+
 .navbar-default {
     border: none !important;
     background: none !important;
-    margin: 0 !important;
     min-height: 0 !important;
     padding: 0 !important;
 }
@@ -263,6 +267,9 @@ html, body{
 }
 .navbar-nav {
     float: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:none 
 }
 .top-nav ul li a{
 	color: #fff !important;
@@ -1372,9 +1379,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 	}
 }
 @media(max-width:1024px){
-	.banner {
-		padding: 0 0 5em 0;
-	}
+	
 	.captn {
 		width: 225px;
 		height: 140px;
@@ -1396,7 +1401,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 		width: 100%;
 	}
 	.top-nav {
-		float: none;
+		
 		margin: 2em 0 0 0;
 		width: 100%;
 		text-align: center;
@@ -1490,7 +1495,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 		height: 103px;
 	}
         .top-nav {
-            width: 49%;
+            width: 85%;
             display: inline-block;
         }
         .header-left{
@@ -1880,6 +1885,12 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
         }
         .linea_degradada_izquierda{
             width: 20%
+        }
+        .footer-grid{
+            display: none !important
+        }
+        .contact-footer{
+            width: 100%;
         }
 }
 @media(max-width:375px){
