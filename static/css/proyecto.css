@@ -1,0 +1,43 @@
+.container_content_proyect{
+    text-align: center; 
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+.title_proyecto{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.text_proyect{
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 14px;
+}
+.text_proyect_sub{
+    text-align: justify;
+    width: 100%;
+    margin: 0 auto;
+}
+.container_content_sub_proyect{
+    text-align: center; 
+    width: 70%; 
+    margin: 0 auto; 
+    height: 230px;
+    display: block;
+}
+.sub_container_proyect{
+    width: 25%;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+}
+.container_text_proyect{
+    text-align: center; 
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: 30px;
+}

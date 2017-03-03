@@ -52,7 +52,7 @@
 								<li><a class="active" href="servicios.php" class="scroll">Servicios</a></li>
 								<li><a href="beneficio.php" class="scroll">Beneficios</a></li>
 								<li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
-								<li><a href="" class="scroll">Poyectos Realizados</a></li>
+                                                                <li><a href="proyecto.php" class="scroll">Poyectos Realizados</a></li>
 								<li><a href="contactenos.php" class="scroll">Contactenos</a></li>
 							</ul>
 							<div class="clearfix"> </div>							
@@ -209,6 +209,7 @@
 <script type="text/javascript" src="static/js/move-top.js"></script>
 <script type="text/javascript" src="static/js/easing.js"></script>
 <script type="text/javascript" src="static/js/aos.js"></script>
+<script type="text/javascript" src="static/js/servicios.js"></script>
 </script>
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">

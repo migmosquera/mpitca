@@ -36,7 +36,8 @@ html, body{
 .container_servicios{
 	width: 97%; 
 	background-color: #ffffff; 
-	margin: 0 auto
+	margin: 0 auto;
+        text-align: center
 }
 .banner_interno{
 	padding-bottom: 25px !important;
