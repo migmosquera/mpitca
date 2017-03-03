@@ -36,30 +36,34 @@
 
                         <div class="clearfix"> </div>
                     </div>
-                    <div class="top-nav">
-                        <nav class="navbar navbar-default">
+                    <nav class="navbar navbar-default top-nav">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
+
                             </div>
+
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li><a  href="index.php">Home</a></li>
-                                    <li><a  href="servicios.php" class="scroll">Servicios</a></li>
+                                    <li><a  href="index.html">Home</a></li>
+                                    <li><a href="servicios.php" class="scroll">Servicios</a></li>
                                     <li><a href="beneficio.php" class="scroll">Beneficios</a></li>
                                     <li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
                                     <li><a href="proyecto.php" class="scroll">Poyectos Realizados</a></li>
-                                    <li><a class="active" href="contactenos.php" class="scroll">Contactenos</a></li>
+                                    <li><a class="active" href="contactenos.php" class="scroll">Contactenos</a></li> 
+
                                 </ul>
-                                <div class="clearfix"> </div>							
-                            </div>	
-                        </nav>		
-                    </div>
+
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>   
                     <div class="clearfix"> </div>
                 </div>
             </div>
