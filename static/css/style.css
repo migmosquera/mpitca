@@ -1466,6 +1466,15 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
                 width: 28%;
         }
 }
+@media(max-width:850px){
+	
+        .carrousel_previous{
+            display: none;
+        }
+        .carrousel_next {
+            display: none;
+        }
+}
 @media(max-width:800px){
 	.captn {
 		width: 175px;
@@ -1622,7 +1631,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
 }
 @media(max-width:600px){
 	.banner-info h3 {
-		font-size: 1.5em;
+		font-size: 20px;
 	}
 	.banner-info h2 {
 		font-size: 2em;

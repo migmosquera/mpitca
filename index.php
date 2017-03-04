@@ -83,7 +83,7 @@
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <!--<div class="banner-info banner">
+            <div class="banner-info banner">
                 <div id="myCarousel" class="container container_carrousel slide">
 
                    
@@ -131,20 +131,6 @@
                     </ol>
                 </div>
 
-            </div>-->
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img class="display_inline image_none" src="static/images/redes.png" >
-                    </li>
-                    <li>
-                         <img class="display_inline image_none" src="static/images/instalacion.png" >
-                    </li>
-                    <li>
-                        <img src="static/images/telefonia.png" class="display_inline image_none"   >
-                    </li>
-                   
-                </ul>
             </div>
         </div>
     </div>
