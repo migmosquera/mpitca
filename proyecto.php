@@ -77,28 +77,78 @@
                     <h3 class="title_serivicios" style="font-size: 21px">Proyectos Realizados</h3>	
                     <div class="linea_degradada_derecha"></div>
                 </div>
-                <div class="container_content_proyect">
-                    <p class="title_proyecto"><strong>Tecnología Inalámbrica</strong></p>
-                    <p class="text_proyect">Definitivamente, en estos días en que el tiempo es un elemento importante y la necesidad de estar conectados se hace imprescindible, la tecnología inalámbrica surge como una solución adecuada a estas necesidades. Es por eso que en MPIT nos hemos enfocado a desarrollar personal de alto nivel para ofrecer soluciones en esta área acordes a las necesidades de nuestros clientes.</p>
-                    <p class="text_proyect">Lo anterior se traduce en la ejecución de proyectos de gran envergadura (desde la etapa de levantamiento de información hasta la puesta en marcha), entre los cuales podemos mencionar:</p>
-                </div>
+               
                 <div class="container_content_sub_proyect">
-                    <div id="sercompreca" class="sub_container_proyect">
-                        <p class="title_proyecto_sub"><strong>Enlace Inalámbrico Sercompreca</strong></p>
-                        <img style="display: inline-block; border-radius: 5px;width: 200px;height: 150px;" src="static/images/soperca.jpg" />
+                    <div id="sercompresa" class="container_proyectos">
+                        <h4 class="title_proyecto">Sercompreca</h4>
+                        <div id="" class="sub_container_proyect" style="background-color: #3C8AD6;">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/sercompresa.png" />
+                            </div>
+                        </div>
+                        <p id="sercompresaInfo">Ver Información</p>
                     </div>
-                    <div id="policiaMunicipal" class="sub_container_proyect">
-                        <p class="title_proyecto_sub"><strong>Proyecto de Video Vigilancia de la Policía Municipal de Chacao</strong></p>
-                        <img style="display: inline-block; border-radius: 5px;width: 200px;height: 150px;" src="static/images/chachao.jpg" />
+                    <div id="policiaChacao" class="container_proyectos">
+                        <h4 class="title_proyecto">Policía Municipal de Chacao</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/policiaChacao.jpg" />
+                            </div>
+                        </div>
+                        <p id="policiaChacaoInfo">Ver Información</p>
                     </div>
-
+                    <div id="ministerioCruz" class="container_proyectos">
+                        <h4 class="title_proyecto">Ministerio Público de Puerto la Cruz</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/ministerioPublic.png" />
+                            </div>
+                        </div>
+                        <p id="ministerioCruzInfo">Ver Información</p>
+                    </div>
+                    <div id="novartis" class="container_proyectos">
+                        <h4 class="title_proyecto">Novartis Nutrition</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/novartisNutrition.png" />
+                            </div>
+                        </div>
+                        <p id="novartisInfo">Ver Información</p>
+                    </div>
+                    <div id="hotelDinastia" class="container_proyectos">
+                        <h4 class="title_proyecto">Hotel Dinastia</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/dinastiaHotel.png" />
+                            </div>
+                        </div>
+                        <p id="hotelDinastiaInfo">Ver Información</p>
+                    </div>
+                    <div id="anubis" class="container_proyectos">
+                        <h4 class="title_proyecto">Corporación Anubis C.A.</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/corporacionAnubis.png" />
+                            </div>
+                        </div>
+                        <p id="anubisInfo">Ver Información</p>
+                    </div> 
+                    <div id="ministerioCabimas" class="container_proyectos">
+                        <h4 class="title_proyecto">Ministerio Público de Cabimas</h4>
+                        <div id="" class="sub_container_proyect">
+                            <div class="container_imagen_proyecto">
+                                <img style="border-radius: 5px" src="static/images/ministerioPublic.png" />
+                            </div>
+                        </div>
+                        <p id="ministerioCabimasInfo">Ver Información</p>
+                    </div>
                 </div>
-                <div class="container_text_proyect">
+                <!--<div class="container_text_proyect">
                     <p id="textSercompreca" class="labelHide">Se diseñó y ejecuto un proyecto para enlazar inalambricamente tres áreas de esta empresa con tecnología CISCO. Este proyecto contó con un enlace de unos 500 mts. y otro con una distancia aproximada de 7 Kms.</p>
                     <p id="textPolociaMunicipal" class="labelHide">Definitivamente uno de los proyectos que nos deparó mayores satisfacciones, no solo en el hecho de cooperar con las autoridades de este municipio en la vigilancia y prevención, sino en haber desarrollado un proyecto con tecnología de punta, usando para esto tecnología CISCO en las conexiones inalámbricas y AXIS en las cámaras con tecnología IP, además de un sistema de voceo con lo cual las autoridades están en la capacidad de suministrar información a los transeúntes sin tener que desplazarse hasta el sitio. <br><br>
                         Así mismo, hemos desarrollado otra series de proyectos en el área de la tecnología inalámbrica, entre los cuales podemos citar: instalación y configuración de red inalámbrica con equipos CISCO para la empresa Metro de Caracas, instalación y configuración de Access Points PROXIM en las instalaciones del Ministerio de Industrias Básicas y Minería (MIBAM), enlace inalámbrico Anubis, instalación y configuración de Access Points CISCO en salas de Video Conferencias de PDVSA Falcón., instalación y configuración de Access Points CISCO en sala de conferencias de Novartis Nutrition. </p>
                 </div>
-                <div  style="background-image: url('static/images/fondo.png'); height: 3px; width: 80%; margin: 0 auto;"></div>
+                
                 <div class="container_content_proyect">
                     <p class="title_proyecto"><strong>Redes Empresariales</strong></p>
                     <p class="text_proyect">Es una de las áreas donde tenemos mayor participación, debido a la experiencia de nuestros especialistas y al esfuerzo continuo de mantenernos al día con la tecnología. Entre los proyectos más importantes donde hemos participados, podemos mencionar los siguientes:</p>
@@ -126,7 +176,7 @@
                     <p id="textNutrition" class="labelHide">Este proyecto constó con la actualización de toda la plataforma de infraestructura tanto de la planta en Valencia como de las oficinas comerciales en Baruta, abarcando la instalación de Fibra Óptica como backbone y cableado UTP cat. 6 para las estaciones de trabajo y como equipamiento activo se instalaron y configuraron equipos CISCO.</p>
                     <p id="textCabimas" class="labelHide">Al igual que el proyecto del MP de Pto la Cruz, este constó de la instalación y configuración del cableado estructurado de todo el edificio, incluyendo la instalación y configuración de servidores Proliant HGP 380, Firewall WATCHGUARD, Proxy BLUECOAT y equipamiento activo CISCO. Adecuación, Instalación y Configuración de la Red de Computación de Novartis Pharma: actualización del cableado estructurado de voz y datos del edificio de la sede.</p>
                     <p id="textHotelDinastia" class="labelHide">instalación del cableado estructurado del hotel, voz, datos, sonido y video vigilancia. Adecuación del Centro de Computo de Anubis: actualización y mejoramiento del Centro de Computo de la empresa por medio de la instalación de un rack con todos los elementos que componen un cableado estructurado. Instalación y Configuración de la Red de Computación de Espequiarsa: instalación del cableado estructurado de la empresa, tanto para la parte de datos, como para la de voz y video. Instalación de la Red de Voz e intercomunicación del Conjunto Residencial Villa Florencia: instalación del cableado estructurado de voz e intercomunicación en las instalaciones del conjunto residencial, Instalación de la Red de Computación de Espiñeira, Sheldon y Asociados: instalación de la red de cableado estructurado de la sede</p>
-                </div>
+                </div>-->
 
             </div>
         </div>
