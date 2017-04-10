@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+    require_once  'controller/send_email.php';
 ?>
 <html lang="en">
 
@@ -162,126 +163,126 @@
         </div>
         <div class="modal fade" id="myModalJormos" role="dialog">
             <div class="modal-dialog">
-
+                <form action="" method="post" accept-charset="utf-8">
                 <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Jorge Mosquera</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div style="display: block">
-                            <p class="send_email_name"><strong>Para:</strong></p>
-                            <p style="display: inline-block; color: #333333">Jorge Mosquera</p>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Jorge Mosquera</h4>
                         </div>
-                        <div style="display: block">
-                            <p class="send_email_name"><strong>Asunto:</strong></p>
-                            <p style="display: inline-block; color: #333333">Consulta</p>
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                            <input class="input_modal"type="text" placeholder="De:" value="" />
-                        </div>
-                        <div style="display: block;" class="margin_modal container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                            <input class="input_modal" type="text" placeholder="email:" value="" />
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                            <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido"  ></textarea>
-                        </div>
+                        <div class="modal-body">
+                            <div style="display: block">
+                                <p class="send_email_name"><strong>Para:</strong></p>
+                                <p style="display: inline-block; color: #333333">Jorge Mosquera</p>
+                            </div>
+                            <div style="display: block">
+                                <p class="send_email_name"><strong>Asunto:</strong></p>
+                                <p style="display: inline-block; color: #333333">Consulta</p>
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
+                                <input class="input_modal"type="text" placeholder="De:" value="" id="from" name="from" />
+                            </div>
+                            <div style="display: block;" class="margin_modal container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
+                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
+                                <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
+                            </div>
 
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" id="sendEmail"  name="sendEmail" class="btn btn-default" value="Enviar" />	
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" value="Enviar" />	
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
+                </form>
             </div>
         </div>
         <div class="modal fade" id="myModalCharles" role="dialog">
             <div class="modal-dialog">
-
+                <form action="" method="post" accept-charset="utf-8">
                 <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Charles Chaderton</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div style="display: block">
-                            <p  class="send_email_name"><strong>Para:</strong></p>
-                            <p style="display: inline-block; color: #333333">Charles Chaderton</p>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Charles Chaderton</h4>
                         </div>
-                        <div style="display: block">
-                            <p class="send_email_name"><strong>Asunto:</strong></p>
-                            <p style="display: inline-block; color: #333333">Consulta</p>
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                            <input class="input_modal" type="text" placeholder="De:" value="" />
-                        </div>
-                        <div style="display: block" class="margin_modal container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                            <input class="input_modal" type="text" placeholder="email:" value="" />
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                            <textarea  class="input_modal"  style="height: 100px;" placeholder="Contenido"  ></textarea>
-                        </div>
+                        <div class="modal-body">
+                            <div style="display: block">
+                                <p  class="send_email_name"><strong>Para:</strong></p>
+                                <p style="display: inline-block; color: #333333">Charles Chaderton</p>
+                            </div>
+                            <div style="display: block">
+                                <p class="send_email_name"><strong>Asunto:</strong></p>
+                                <p style="display: inline-block; color: #333333">Consulta</p>
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
+                                <input class="input_modal" type="text" placeholder="De:" value="" id="from" name="from" />
+                            </div>
+                            <div style="display: block" class="margin_modal container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
+                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
+                                <textarea  class="input_modal"  style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
+                            </div>
 
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" id="sendEmail" name="sendEmail" class="btn btn-default" value="Enviar" />	
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" value="Enviar" />	
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
+                </form>
             </div>
         </div>
         <div class="modal fade" id="myModalMpitca" role="dialog">
             <div class="modal-dialog">
-
+                <form action="" method="post" accept-charset="utf-8">
                 <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">MPITCA</h4>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">MPITCA</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div style="display: block">
+                                <p  class="send_email_name"><strong>Para:</strong></p>
+                                <p style="display: inline-block; color: #333333">MPITCA</p>
+                            </div>
+                            <div style="display: block">
+                                <p class="send_email_name"><strong>Asunto:</strong></p>
+                                <p style="display: inline-block; color: #333333">Consulta</p>
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
+                                <input class="input_modal" type="text" placeholder="De:" value="" id="from" name="from" />
+                            </div>
+                            <div style="display: block;" class="margin_modal container_modal_input">
+                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
+                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
+                            </div>
+                            <div style="display: block" class="container_modal_input">
+                                <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
+                                <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" id="sendEmail"  name="sendEmail" class="btn btn-default" value="Enviar" />	
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-
-                        <div style="display: block">
-                            <p  class="send_email_name"><strong>Para:</strong></p>
-                            <p style="display: inline-block; color: #333333">MPITCA</p>
-                        </div>
-                        <div style="display: block">
-                            <p class="send_email_name"><strong>Asunto:</strong></p>
-                            <p style="display: inline-block; color: #333333">Consulta</p>
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                            <input class="input_modal" type="text" placeholder="De:" value="" />
-                        </div>
-                        <div style="display: block;" class="margin_modal container_modal_input">
-                            <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                            <input class="input_modal" type="text" placeholder="email:" value="" />
-                        </div>
-                        <div style="display: block" class="container_modal_input">
-                            <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                            <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido"  ></textarea>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button"  class="btn btn-default" value="Enviar" />	
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
+                </form>
             </div>
         </div>
         <!-- //footer -->

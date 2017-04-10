@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php
+       
+        if(isset($_POST['sendEmail'])){
+            
+            require_once 'controller/email/class.smtp.php';
+            require_once 'controller/email/PHPMailerAutoload.php';
+            require_once 'controller/email/class.phpmailer.php';
+            $name = $_POST['from'];
+            $email = $_POST['email'];
+            $msjEmail = $_POST['content_email'];
+            $correo = new PHPMailer();
+            $correo->IsSMTP();
+            $correo->SMTPAuth = true;
+            $correo->SMTPSecure = 'tls';
+            $correo->Host = "smtp.gmail.com";
+            $correo->Port = 587;
+            $correo->Username = "soportesyslife@gmail.com";
+            $correo->Password = "equipo_syslife";
+            $correo->setFrom("soportesyslife@gmail.com");
+            $correo->addAddress('migmosquera2303@gmail.com');
+            $correo->Subject = "correo enviado por '.$name.'";
+            $correo->MsgHTML("<strong>Mensaje enviado por el usuario:</strong> $name </br> <strong>Email:</strong> $email  </br> <strong>Mensaje:</strong> $msjEmail  ");
+            if (!$correo->Send()) {
+                $msjSendEmail = "Hubo un error: " . $correo->ErrorInfo;
+            } else {
+                $msjSendEmail = "Mensaje enviado con exito.";
+            }
+        }
+        ?>
+    </body>
+</html>

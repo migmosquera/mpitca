@@ -206,7 +206,7 @@
     <div class="about" id="about">
         <div class="container" data-aos="zoom-in-up">
             <div class="container_services" style="" >
-                <h3>Servicios:</h3>
+                <h3 style="text-align: center"><strong>Servicios:</strong></h3>
                 <div class="container_divided" >
                     <div class="display_inline_block_width" >
                         <h5><a href="servicios.php#servicesUser" style="color: #333333"><strong>Servicio de Usuario Final</strong></a></h5>
@@ -246,16 +246,55 @@
 
             </div>
             <div class="container_certificate">
-                <h3 style="text-align: center">Certificados en:</h3>
+                <h3 style="text-align: center"><strong>Certificados en:</strong></h3>
                 <div class="display_block_width">
                     <div class="container_img_certificate" >
-                        <img src="static/images/cisco.png" />
+                        <img src="static/images/certificados/cisco.png" />
                     </div>
                     <div class="container_img_certificate" >
-                        <img src="static/images/itil.jpg" />
+                        <img src="static/images/certificados/cisco2.png" />
                     </div>
                     <div class="container_img_certificate" >
-                        <img src="static/images/pmp.jpg" />
+                        <img src="static/images/certificados/cisco3.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/cisco4.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/panduit.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/diemon.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/ibm.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/axis.jpg" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/brocade.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/intel.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/microsoft.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/sales.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/mcafee.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/wmare.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/emc.png" />
+                    </div>
+                    <div class="container_img_certificate" >
+                        <img src="static/images/certificados/avaya.png" />
                     </div>
                 </div>
                 <div class="clearfix"> </div>

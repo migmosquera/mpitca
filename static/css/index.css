@@ -29,17 +29,17 @@
     color: #ffffff;
 }
 .container_services{
-    width: 70%; 
+    width: 100%; 
     display: inline-block;
     float: left
 }
 .container_certificate{
-    width: 29%; 
+    width: 100%; 
     display: inline-block;
 }
 .container_img_certificate{
     display: inline-block; 
-    width: 100%;
+    width: 24%;
     text-align: center; 
     margin-bottom: 15px
 }
