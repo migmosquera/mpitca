@@ -57,7 +57,7 @@
                                     <li><a href="beneficio.php" class="scroll">Beneficios</a></li>
                                     <li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
                                     <li><a class="active" href="proyecto.php" class="scroll">Poyectos Realizados</a></li>
-                                    <li><a href="contactenos.php" class="scroll">Contactenos</a></li> 
+                                    <li><a href="contactenos.php" class="scroll">Contáctenos</a></li> 
 
                                 </ul>
 
@@ -80,69 +80,69 @@
                
                 <div id="container_content_sub_proyect" class="container_content_sub_proyect">
                     <div id="sercompresa" class="container_proyectos">
-                        <h4 class="title_proyecto">Sercompreca</h4>
-                        <div id="" class="sub_container_proyect" style="background-color: #3C8AD6;">
+                        <h4 class="title_proyecto">Redes Empresariales</h4>
+                        <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/sercompresa.png" />
+                                <img style="border-radius: 5px;" src="static/images/Redes_Empresariales.jpg" />
                             </div>
                         </div>
                         <p id="sercompresaInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="policiaChacao" class="container_proyectos">
-                        <h4 class="title_proyecto">Policía Municipal de Chacao</h4>
+                        <h4 class="title_proyecto">Seguridad Perimetral de Redes</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/policiaChacao.jpg" />
+                                <img style="border-radius: 5px" src="static/images/seguridad_perimetral_de_redes.jpg" />
                             </div>
                         </div>
                         <p id="policiaChacaoInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="metroCaracas" class="container_proyectos">
-                        <h4 class="title_proyecto">Metro de Caracas</h4>
+                        <h4 class="title_proyecto">Sistema de Información</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/metroCaracas.jpg" />
+                                <img style="border-radius: 5px;" src="static/images/sistemas_de_información.jpg" />
                             </div>
                         </div>
                         <p id="metroCaracasInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="ministerioCabimas" class="container_proyectos">
-                        <h4 class="title_proyecto">Ministerio Público de Cabimas</h4>
+                        <h4 class="title_proyecto">Sistemas de Telefonía</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/ministerioPublic.png" />
+                                <img style="border-radius: 5px" src="static/images/sistemas_de_telefonía.jpg" />
                             </div>
                         </div>
                         <p id="ministerioCabimasInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="novartis" class="container_proyectos">
-                        <h4 class="title_proyecto">Novartis Nutrition</h4>
+                        <h4 class="title_proyecto">Tecnologia Inalambrica</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/novartisNutrition.png" />
+                                <img style="border-radius: 5px" src="static/images/tecno_inalambrica.jpg" />
                             </div>
                         </div>
                         <p id="novartisInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="hotelDinastia" class="container_proyectos">
-                        <h4 class="title_proyecto">Hotel Dinastia</h4>
+                        <h4 class="title_proyecto">Video Vigilancia</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/dinastiaHotel.png" />
+                                <img style="border-radius: 5px" src="static/images/video_vigilancia.jpg" />
                             </div>
                         </div>
                         <p id="hotelDinastiaInfo" class="text_more_info">Ver Información</p>
                     </div>
                     <div id="anubis" class="container_proyectos">
-                        <h4 class="title_proyecto">Corporación Anubis C.A.</h4>
+                        <h4 class="title_proyecto">Estudios de Redes</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/corporacionAnubis.png" />
+                                <img style="border-radius: 5px" src="static/images/estudio_de_redes.jpg" />
                             </div>
                         </div>
                         <p id="anubisInfo" class="text_more_info">Ver Información</p>
                     </div> 
-                     <div id="ministerioCruz" class="container_proyectos">
+                    <!--<div id="ministerioCruz" class="container_proyectos">
                         <h4 class="title_proyecto">Ministerio Público de Puerto la Cruz</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <p id="ministerioCruzInfo" class="text_more_info">Ver Información</p>
-                    </div>
+                    </div>-->
                 </div>
                 <div id="sercompresaModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
