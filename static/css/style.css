@@ -39,7 +39,7 @@ html, body{
     left: 15%;
 }
 .container_text_modal{
-    width: 69%;
+    width: 100%;
     display: inline-block
 }
 .text_title_modal{
@@ -1446,9 +1446,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
     }
 }
 @media(max-width:991px){
-    .container_text_modal{
-        width: 63%;
-    }
+    
     .icon-right {
         width: 72%;
         float: none;
@@ -1705,6 +1703,12 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter {
     }
 }
 @media(max-width:600px){
+    .container_text_modal{
+        width: 95%;
+    }
+    .context_modal{
+        font-size: 15px
+    }
     .banner-info h3 {
         font-size: 20px;
     }

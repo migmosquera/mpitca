@@ -14,47 +14,43 @@ function init() {
 
 function View() {
     console.log("((View))");
-   $("#sercompresaInfo").on('click',function(){
-       $("#sercompresaModal").removeClass('labelHide')
+   $("#redesEmpresariales").on('click',function(){
+       $("#redesEmpresarialesModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
    $(".closetModal").on('click',function(){
-       $("#sercompresaModal").addClass('labelHide')
-       $("#policiaChacaoModal").addClass('labelHide')
-       $("#metroCaracasModal").addClass('labelHide')
-       $("#ministerioCabimasModal").addClass('labelHide')
-       $("#novartisModal").addClass('labelHide')
-       $("#hotelDinastiaModal").addClass('labelHide')
-       $("#ministerioCruzModal").addClass('labelHide')
-       $("#anubisModal").addClass('labelHide')
+       $("#redesEmpresarialesModal").addClass('labelHide')
+       $("#seguridadPerimetralModal").addClass('labelHide')
+       $("#sistemaInformacionModal").addClass('labelHide')
+       $("#sistemaTelefoniaModal").addClass('labelHide')
+       $("#tecnologiaInalambricaModal").addClass('labelHide')
+       $("#videoVigilanciaModal").addClass('labelHide')
+       $("#estudiosRedesModal").addClass('labelHide')
        $("#container_content_sub_proyect").removeClass('container_opasicity')
    })
-   $("#policiaChacaoInfo").on('click',function(){
-       $("#policiaChacaoModal").removeClass('labelHide')
+   $("#seguridadPerimetralInfo").on('click',function(){
+       $("#seguridadPerimetralModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
-   $("#metroCaracasInfo").on('click',function(){
-       $("#metroCaracasModal").removeClass('labelHide')
+   $("#sistemaInformacionInfo").on('click',function(){
+       $("#sistemaInformacionModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
-   $("#ministerioCruzInfo").on('click',function(){
-       $("#ministerioCruzModal").removeClass('labelHide')
+   $("#tecnologiaInalambricaInfo").on('click',function(){
+       $("#tecnologiaInalambricaModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
-   $("#novartisInfo").on('click',function(){
-       $("#novartisModal").removeClass('labelHide')
+   $("#videoVigilanciaInfo").on('click',function(){
+       $("#videoVigilanciaModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
-   $("#hotelDinastiaInfo").on('click',function(){
-       $("#hotelDinastiaModal").removeClass('labelHide')
+   $("#sistemaTelefoniaInfo").on('click',function(){
+       console.log("paso por aqui");
+       $("#sistemaTelefoniaModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
-   $("#ministerioCabimasInfo").on('click',function(){
-       $("#ministerioCabimasModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#anubisInfo").on('click',function(){
-       $("#anubisModal").removeClass('labelHide')
+   $("#estudiosRedesInfo").on('click',function(){
+       $("#estudiosRedesModal").removeClass('labelHide')
        $("#container_content_sub_proyect").addClass('container_opasicity')
    })
 

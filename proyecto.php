@@ -79,226 +79,189 @@
                 </div>
                
                 <div id="container_content_sub_proyect" class="container_content_sub_proyect">
-                    <div id="sercompresa" class="container_proyectos">
+                    <div id="redesEmpresariales" class="container_proyectos">
                         <h4 class="title_proyecto">Redes Empresariales</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
                                 <img style="border-radius: 5px;" src="static/images/Redes_Empresariales.jpg" />
                             </div>
                         </div>
-                        <p id="sercompresaInfo" class="text_more_info">Ver Información</p>
+                        <p id="redesEmpresarialesInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="policiaChacao" class="container_proyectos">
+                    <div id="seguridadPerimetral" class="container_proyectos">
                         <h4 class="title_proyecto">Seguridad Perimetral de Redes</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
                                 <img style="border-radius: 5px" src="static/images/seguridad_perimetral_de_redes.jpg" />
                             </div>
                         </div>
-                        <p id="policiaChacaoInfo" class="text_more_info">Ver Información</p>
+                        <p id="seguridadPerimetralInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="metroCaracas" class="container_proyectos">
+                    <div id="sistemaInformacion" class="container_proyectos">
                         <h4 class="title_proyecto">Sistema de Información</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px;" src="static/images/sistemas_de_información.jpg" />
+                                <img style="border-radius: 5px; width: 250px;height: 150px;" src="static/images/sistemas_de_información.jpg" />
                             </div>
                         </div>
-                        <p id="metroCaracasInfo" class="text_more_info">Ver Información</p>
+                        <p id="sistemaInformacionInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="ministerioCabimas" class="container_proyectos">
+                    <div id="sistemaTelefonia" class="container_proyectos">
                         <h4 class="title_proyecto">Sistemas de Telefonía</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/sistemas_de_telefonía.jpg" />
+                                <img style="border-radius: 5px; width: 250px;height: 150px;" src="static/images/sistemas_de_telefonía.jpg" />
                             </div>
                         </div>
-                        <p id="ministerioCabimasInfo" class="text_more_info">Ver Información</p>
+                        <p id="sistemaTelefoniaInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="novartis" class="container_proyectos">
+                    <div id="tecnologiaInalambrica" class="container_proyectos">
                         <h4 class="title_proyecto">Tecnologia Inalambrica</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
                                 <img style="border-radius: 5px" src="static/images/tecno_inalambrica.jpg" />
                             </div>
                         </div>
-                        <p id="novartisInfo" class="text_more_info">Ver Información</p>
+                        <p id="tecnologiaInalambricaInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="hotelDinastia" class="container_proyectos">
+                    <div id="videoVigilancia" class="container_proyectos">
                         <h4 class="title_proyecto">Video Vigilancia</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
                                 <img style="border-radius: 5px" src="static/images/video_vigilancia.jpg" />
                             </div>
                         </div>
-                        <p id="hotelDinastiaInfo" class="text_more_info">Ver Información</p>
+                        <p id="videoVigilanciaInfo" class="text_more_info">Ver Información</p>
                     </div>
-                    <div id="anubis" class="container_proyectos">
+                    <div id="estudiosRedes" class="container_proyectos">
                         <h4 class="title_proyecto">Estudios de Redes</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
                                 <img style="border-radius: 5px" src="static/images/estudio_de_redes.jpg" />
                             </div>
                         </div>
-                        <p id="anubisInfo" class="text_more_info">Ver Información</p>
+                        <p id="estudiosRedesInfo" class="text_more_info">Ver Información</p>
                     </div> 
-                    <!--<div id="ministerioCruz" class="container_proyectos">
-                        <h4 class="title_proyecto">Ministerio Público de Puerto la Cruz</h4>
-                        <div id="" class="sub_container_proyect">
-                            <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px" src="static/images/ministerioPublic.png" />
-                            </div>
-                        </div>
-                        <p id="ministerioCruzInfo" class="text_more_info">Ver Información</p>
-                    </div>-->
                 </div>
-                <div id="sercompresaModal" class="labelHide container_modal_proyect container">
+                <div id="redesEmpresarialesModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Sercompreca</h4>
-                    <div class="container_imagen_proyecto_modal">
-                       <img style="border-radius: 5px" src="static/images/sercompresa.png" /> 
-                    </div>
+                    <h4 class="title_proyecto_modal">Redes Empresariales</h4>
                     <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Tecnología Inalámbrica</strong></p>
-                        <p class="context_modal" style="text-align: justify">Se diseñó y ejecuto un proyecto para enlazar inalambricamente tres áreas de esta empresa con tecnología CISCO. 
+                        
+                        <p class="context_modal" style="text-align: justify">Enlace Inalámbrico Sercompreca: se diseñó y ejecuto un proyecto para enlazar inalambricamente tres áreas de esta empresa con tecnología CISCO. 
                             Este proyecto contó con un enlace de unos 500 mts. y otro con una distancia aproximada de 7 Kms.</p>
+                        <p class="context_modal" style="text-align: justify">Proyecto de Video Vigilancia de la Policía Municipal de Chacao: Definitivamente uno de los proyectos que nos deparó mayores satisfacciones, no solo en el hecho de cooperar con las autoridades de este municipio en la vigilancia y prevención, sino en haber desarrollado un proyecto con tecnología de punta, usando para esto tecnología CISCO en las conexiones inalámbricas y AXIS en las cámaras con tecnología IP, además de un sistema de voceo con lo cual 
+                            las autoridades están en la capacidad de suministrar información a los transeúntes sin tener que desplazarse hasta el sitio.</p>
+                        <p class="context_modal" style="text-align: justify">Así mismo, hemos desarrollado otra series de proyectos en el área de la tecnología inalámbrica, entre los cuales podemos citar: instalación y configuración de red inalámbrica con equipos CISCO para la empresa Metro de Caracas, instalación y configuración de Access Points PROXIM en las instalaciones del Ministerio de Industrias Básicas y Minería (MIBAM), enlace inalámbrico Anubis, instalación y configuración de Access Points CISCO en salas de Video Conferencias de PDVSA Falcón., 
+                            instalación y configuración de Access Points CISCO en sala de conferencias de Novartis Nutrition.</p>
                         
                     </div>
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
                 </div>
-                <div id="policiaChacaoModal" class="labelHide container_modal_proyect container">
+                <div id="seguridadPerimetralModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Policía Municipal de Chacao</h4>
-                    <div class="container_imagen_proyecto_modal">
-                       <img style="border-radius: 5px" src="static/images/policiaChacao.jpg" /> 
-                    </div>
+                    <h4 class="title_proyecto_modal">Seguridad Perimetral de Redes</h4>
+                   
                     <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Tecnología Inalámbrica</strong></p>
-                        <p class="context_modal" style="text-align: justify"> Definitivamente uno de los proyectos que nos deparó mayores satisfacciones, 
-                            no solo en el hecho de cooperar con las autoridades de este municipio en la vigilancia y prevención, 
-                            sino en haber desarrollado un proyecto con tecnología de punta, 
-                            usando para esto tecnología CISCO en las conexiones inalámbricas y AXIS en las cámaras con tecnología IP, 
-                            además de un sistema de voceo con lo cual las autoridades están en la capacidad de suministrar información a los transeúntes sin tener que desplazarse hasta el sitio.
-                        </p>
                         
-                    </div>
-                    <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
-                </div>
-                <div id="metroCaracasModal" class="labelHide container_modal_proyect container">
-                    <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Metro de Caracas</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/metroCaracas.jpg" /> 
-                    </div>
-                    <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Tecnología Inalámbrica</strong></p>
-                        <p class="context_modal" style="text-align: justify"> 
-                            Instalación y configuración de red inalámbrica con equipos CISCO para la empresa Metro de Caracas
-                        </p>
-                        
-                    </div>
-                    <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
-                </div>
-                <div id="ministerioCruzModal" class="labelHide container_modal_proyect container">
-                    <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Adecuación, Instalación y Configuración de la Red de Computación del Ministerio Público de Puerto la Cruz</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/ministerioPublic.png" /> 
-                    </div>
-                    <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Redes Empresariales</strong></p>
-                        <p class="context_modal" style="text-align: justify"> 
-                            Este proyecto constó con la instalación de Fibra Óptica usada como 'backbone' y cableado UTP cat. 6 hasta las estaciones de trabajo, 
-                            además de la adecuación/configuración de cuartos de cableado intermedios y del cuarto de cableado principal donde fueron instalados y 
-                            configurados tres servidores Proliant HP 380, un Servidor Proxy BLUECOAT y un 
-                            servidor Firewall WATCHGUARD adicional de toda la infraestructura de 'switching' y 'routing' representados por equipos CISCO.
-                        </p>
-                       
-                    </div>
-                     <p class="context_modal">También se configuró, en este proyecto, toda la red lógica de esta localidad, 
-                            incluyendo todas las cuentas y permisología de los usuarios así como el correo electrónico (LOTUS NOTES), 
+                        <p class="context_modal" style="text-align: justify">Adecuación, Instalación y Configuración de la Red de Computación del Ministerio Público de Puerto la Cruz: este proyecto constó con la instalación de Fibra Óptica usada como 'backbone' y cableado UTP cat. 6 hasta las estaciones de trabajo, además de la adecuación/configuración de cuartos de cableado intermedios y del cuarto de cableado principal donde fueron instalados y configurados tres servidores Proliant HP 380, un Servidor Proxy BLUECOAT y un servidor Firewall 
+                            WATCHGUARD adicional de toda la infraestructura de 'switching' y 'routing' representados por equipos CISCO.</p>
+                        <p class="context_modal" style="text-align: justify">También se configuró, en este proyecto, toda la red lógica de esta localidad, incluyendo todas las cuentas y permisología de los usuarios así como el correo electrónico (LOTUS NOTES), 
                             compartimiento de archivos y recursos, etc., para esto se utilizó WINDOWS 2003 SERVER.</p>
+                        
+                    </div>
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
                 </div>
-                <div id="ministerioCabimasModal" class="labelHide container_modal_proyect container">
+                <div id="sistemaInformacionModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Adecuación, Instalación y Configuración de la Red de Computación del Ministerio Público de Cabimas</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/ministerioPublic.png" /> 
-                    </div>
+                    <h4 class="title_proyecto_modal">Sistema de Información</h4>
+                    
                     <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Redes Empresariales</strong></p>
+                        
                         <p class="context_modal" style="text-align: justify"> 
-                            Al igual que el proyecto del MP de Pto la Cruz, 
-                            este constó de la instalación y configuración del cableado estructurado de todo el edificio, 
-                            incluyendo la instalación y configuración de servidores Proliant HGP 380, Firewall WATCHGUARD, Proxy BLUECOAT y 
-                            equipamiento activo CISCO. Adecuación, Instalación y Configuración de la Red de Computación de Novartis Pharma: 
-                            actualización del cableado estructurado de voz y datos del edificio de la sede.
+                           Adecuación, Instalación y Configuración de la Red de Computación de Novartis Nutrition: este proyecto constó con la actualización de toda la plataforma de infraestructura tanto de la planta en Valencia como de las oficinas comerciales en Baruta, abarcando la instalación de Fibra Óptica como backbone y cableado UTP cat. 6 para las estaciones de trabajo y como equipamiento activo se instalaron y configuraron equipos CISCO.
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                          Adecuación, Instalación y Configuración de la Red de Computación de Novartis Pharma: actualización del cableado estructurado de voz y datos del edificio de la sede.
+                        </p>
+                        
+                    </div>
+                    <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
+                </div>
+                <div id="sistemaTelefoniaModal" class="labelHide container_modal_proyect container">
+                    <p class="closet_modal closetModal" id="closetModal">X</p>
+                    <h4 class="title_proyecto_modal">Sistemas de Telefonía</h4>
+                    
+                    <div class="container_text_modal">
+                        
+                        <p class="context_modal" style="text-align: justify"> 
+                            Instalación y Configuración de la Red de Computación del Hotel Dinastía: instalación del cableado estructurado del hotel, voz, datos, sonido y video vigilancia. 
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                            Adecuación del Centro de Computo de Anubis: actualización y mejoramiento del Centro de Computo de la empresa por medio de la instalación de un rack con todos los elementos que componen un cableado estructurado.
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                            Instalación y Configuración de la Red de Computación de Espequiarsa: instalación del cableado estructurado de la empresa, tanto para la parte de datos, como para la de voz y video.
+                        </p>
+                       
+                    </div>
+                  
+                    <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
+                </div>
+                <div id="tecnologiaInalambricaModal" class="labelHide container_modal_proyect container">
+                    <p class="closet_modal closetModal" id="closetModal">X</p>
+                    <h4 class="title_proyecto_modal">Tecnologia Inalambrica</h4>
+                    
+                    <div class="container_text_modal">
+                        
+                        <p class="context_modal" style="text-align: justify"> 
+                            Instalación de la Red de Voz e intercomunicación del Conjunto Residencial Villa Florencia: instalación del cableado estructurado de voz e intercomunicación en las instalaciones del conjunto residencial, 
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                            Instalación de la Red de Computación de Espiñeira, Sheldon y Asociados: instalación de la red de cableado estructurado de la sede.
                         </p>
                        
                     </div>
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
                 </div>
-                <div id="novartisModal" class="labelHide container_modal_proyect container">
+                <div id="videoVigilanciaModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Adecuación, Instalación y Configuración de la Red de Computación de Novartis Nutrition</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/novartisNutrition.png" /> 
-                    </div>
+                    <h4 class="title_proyecto_modal">Video Vigilancia</h4>
+                    
                     <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Redes Empresariales</strong></p>
+                        
                         <p class="context_modal" style="text-align: justify"> 
-                            Este proyecto constó con la actualización de toda la plataforma de infraestructura tanto de la planta en Valencia como de las oficinas comerciales en Baruta, 
-                            abarcando la instalación de Fibra Óptica como backbone y cableado UTP cat. 6 para las estaciones de trabajo y como equipamiento activo se 
-                            instalaron y configuraron equipos CISCO.
+                            Instalación y Configuración del Sistema de Video Vigilancia de Servicon: instalación y configuración del sistema de video vigilancia en la almacenadora de la empresa ubicada en el Instituto Puerto Autónomo de Puerto Cabello, utilizando cámaras de tecnología analógica y visualizadas a través de un DVR tanto localmente como remotamente a través de internet.
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                            Proyecto de Video Vigilancia de la Policía Municipal de Chacao: proyecto explicado en el área de tecnología inalámbrica.
+                        </p>
+                        <p class="context_modal" style="text-align: justify"> 
+                             Instalación y Configuración de Cámaras IP's en Anubis: instalación y configuración de Video Vigilancia usando cámaras IP's DLINK en el detal de la compañía.
                         </p>
                         
                     </div>
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
                 </div>
-                <div id="hotelDinastiaModal" class="labelHide container_modal_proyect container">
+                <div id="estudiosRedesModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Instalación y Configuración de la Red de Computación del Hotel Dinastía y Video Vigilancia</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/dinastiaHotel.png" /> 
-                    </div>
+                    <h4 class="title_proyecto_modal">Estudios de Redes</h4>
+                    
                     <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Redes Empresariales</strong></p>
-                        <p class="text_title_modal"><strong>Video Vigilancia</strong></p>
+                        
                         <p class="context_modal" style="text-align: justify"> 
-                           Instalación del cableado estructurado del hotel, voz, datos, sonido y video vigilancia.
+                           Uno de los problemas frecuentes en las redes empresariales de computación es el crecimiento descontrolado y poca atención en el mantenimiento de las mismas, esto resulta en problemas que, generalmente, se traducen en lentitud de las LAN's. Para resolver este problema común, MPIT se ha orientado a preparar recursos en el área del estudio de las redes.
+                        </p>
+                        
+                        <p class="context_modal" style="text-align: justify"> 
+                           En este orden de idea hemos trabajado en realizar diagnósticos a las LAN's que presentan problemas, como el realizado a la empresa Noffra200, donde se desarrolló una investigación de las posibles causas que estaban afectando el normal desenvolvimiento de la LAN. En este caso se realizó un estudio de los diferentes elementos que pudiesen estar afectando dicho desenvolvimiento: Red, Servidor, Base de Datos y Cliente, generándose al final un informe con una serie de recomendaciones para mejorar el desempeño de esta LAN
                         </p>
                         
                     </div>
-                    <p class="context_modal" style="text-align: justify"> 
-                          instalación y configuración del sistema de video vigilancia en el hotel, 
-                          utilizando cámaras de tecnología IP y analógica y visualizadas a través de un DVR tanto localmente como remotamente a través de internet.
-                    </p>
+                   
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
                 </div>
-                <div id="anubisModal" class="labelHide container_modal_proyect container">
-                    <p class="closet_modal closetModal" id="closetModal">X</p>
-                    <h4 class="title_proyecto_modal">Instalación y Configuración de Cámaras IP's en Anubis</h4>
-                    <div class="container_imagen_proyecto_modal">
-                        <img style="border-radius: 5px" src="static/images/corporacionAnubis.png" /> 
-                    </div>
-                    <div class="container_text_modal">
-                        <p class="text_title_modal">Se uso:</p>
-                        <p class="text_title_modal"><strong>Video Vigilancia</strong></p>
-                        <p class="context_modal" style="text-align: justify"> 
-                           Instalación y configuración de Video Vigilancia usando cámaras IP's DLINK en el detal de la compañía.
-                        </p>
-                        
-                    </div>
-                    <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
-                </div>
+                
             </div>
         </div>
 
