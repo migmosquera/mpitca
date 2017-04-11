@@ -40,7 +40,9 @@ html, body{
 }
 .container_text_modal{
     width: 100%;
-    display: inline-block
+    display: inline-block;
+    max-height: 500px;
+    overflow: auto;
 }
 .text_title_modal{
     font-size: 18px;
@@ -61,7 +63,7 @@ html, body{
     float: right;
     padding: 3px;
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .labelHide{
     display: none;
