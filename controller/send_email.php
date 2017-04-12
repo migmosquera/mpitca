@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,7 +9,10 @@ and open the template in the editor.
         <?php
        
         if(isset($_POST['sendEmail'])){
-            
+            $recipients = array(
+                'migmosquera@hotmail.com' => 'Person One',
+                'migmosquera2303@gmail.com' => 'Person Two',
+             );
             require_once 'controller/email/class.smtp.php';
             require_once 'controller/email/PHPMailerAutoload.php';
             require_once 'controller/email/class.phpmailer.php';
@@ -29,10 +28,14 @@ and open the template in the editor.
             $correo->Username = "soportesyslife@gmail.com";
             $correo->Password = "equipo_syslife";
             $correo->setFrom("soportesyslife@gmail.com");
-            $correo->addAddress('migmosquera2303@gmail.com');
+            foreach($recipients as $email => $emails)
+            {
+              $correo->AddCC($email, $emails);
+            }
             $correo->Subject = "correo enviado por '.$name.'";
             $correo->MsgHTML("<strong>Mensaje enviado por el usuario:</strong> $name </br> <strong>Email:</strong> $email  </br> <strong>Mensaje:</strong> $msjEmail  ");
             if (!$correo->Send()) {
+                echo 'Error';
                 $msjSendEmail = "Hubo un error: " . $correo->ErrorInfo;
             } else {
                 $msjSendEmail = "Mensaje enviado con exito.";

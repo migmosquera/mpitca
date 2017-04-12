@@ -1,0 +1,21 @@
+.container_section{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.container_content_config{
+    width: 99%;
+    height: 90%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.sub_container_config{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
