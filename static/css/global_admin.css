@@ -17,5 +17,60 @@
     display: inline-block;
     text-align: center;
     vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imagenContainer{
+    height: 150px; 
+    border: 1px solid #c4c4c4; 
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.thumb-image{
+    width: 248px;
+    height: 148px  
+}
+.container_title_proyect{
+    max-width: 450px; 
+    width: 100%; 
+    display: inline-block; 
+    text-align: center; 
+    margin-right: 10px; 
+    vertical-align: top;
+    border-top: 1px solid #989898;
+    cursor: pointer
+}
+.label_hide{
+    display: none !important;
+}
+.container_delete_title{
+    height: 195px;
+    border: 1px solid #9E0000;
+    width: 240px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.button_delete{
+    display: inline-block;
+    background-color: #ffffff;
+    border: none;
+    color: #C10000;
+    border: 1px solid;
+    border-radius: 3px;
+}
+.button_delete:hover{
+    background-color: rgba(193, 0, 0, 0.11);
+    
+}
+.button_not_delete{
+    width: 23%;
+    display: inline-block;
+    cursor: pointer
+}
+.button_not_delete:hover{
+   color: 1px solid #007325;
+   
 }
 

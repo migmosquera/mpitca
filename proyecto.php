@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+    include_once 'controller/search_title.php';  
 ?>
 <html lang="en">
 
@@ -79,16 +80,18 @@
                 </div>
                
                 <div id="container_content_sub_proyect" class="container_content_sub_proyect">
-                    <div id="redesEmpresariales" class="container_proyectos">
-                        <h4 class="title_proyecto">Redes Empresariales</h4>
-                        <div id="" class="sub_container_proyect">
-                            <div class="container_imagen_proyecto">
-                                <img style="border-radius: 5px;" src="static/images/Redes_Empresariales.jpg" />
-                            </div>
+                    <?php foreach ($title as $item): ?>
+                        <div id="redesEmpresariales" class="container_proyectos">    
+                                <h4 class="title_proyecto"><?php echo $item['name'] ?></h4>
+                                <div id="" class="sub_container_proyect">
+                                    <div class="container_imagen_proyecto">
+                                        <img style="border-radius: 5px;" src="<?php echo $item['img_title'] ?>" />
+                                    </div>
+                                </div>
+                                <p id="redesEmpresarialesInfo" class="text_more_info">Ver Información</p>
                         </div>
-                        <p id="redesEmpresarialesInfo" class="text_more_info">Ver Información</p>
-                    </div>
-                    <div id="seguridadPerimetral" class="container_proyectos">
+                    <?php endforeach; ?> 
+                    <!--<div id="seguridadPerimetral" class="container_proyectos">
                         <h4 class="title_proyecto">Seguridad Perimetral de Redes</h4>
                         <div id="" class="sub_container_proyect">
                             <div class="container_imagen_proyecto">
@@ -141,7 +144,7 @@
                             </div>
                         </div>
                         <p id="estudiosRedesInfo" class="text_more_info">Ver Información</p>
-                    </div> 
+                    </div>--> 
                 </div>
                 <div id="redesEmpresarialesModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>

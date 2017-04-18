@@ -37,18 +37,42 @@ class Title {
     }
     
     public static function registerTitle($nameTitle, $urlImg) {
-
+     
         $conectar = new Conection();
-        $query = $conectar->prepare('INSERT INTO ' . self::TABLA . ' (name,url_img) VALUES (:name, :url_img)');
+        $query = $conectar->prepare('INSERT INTO ' . self::TABLA . ' (name,img_title) VALUES (:name, :url_img)');
         $query->bindParam(':name', $nameTitle);
         $query->bindParam(':url_img', $urlImg);
         $query->execute();
         $data = $query->fetch();
         if ($data) {
-            return new self($data['password'], $data['username'], $data['iduser']);
+            return new self($data['id'], $data['name'], $data['iduser']);
         } else {
             return FALSE;
         }
+        $conectar = null;
+    }
+    public static function editTitle($id, $nameTitle, $urlImg) {
+
+        $conectar = new Conection();
+        $query = $conectar->prepare('UPDATE ' . self::TABLA  . ' SET name=:name, img_title=:url_img WHERE id=:id');
+        $query->bindParam(':id', $id);
+        $query->bindParam(':name', $nameTitle);
+        $query->bindParam(':url_img', $urlImg);
+        $query->execute();
+        $data = $query->fetchAll();
+        return $data;
+        $conectar = null;
+    }
+    
+    public static function deleteTitle($id, $urlImg) {
+
+        $conectar = new Conection();
+        $query = $conectar->prepare('DELETE FROM ' . self::TABLA  . ' WHERE id=:id');
+        $query->bindParam(':id', $id);
+        unlink($urlImg);
+        $query->execute();
+        $data = $query->fetchAll();
+        return $data;
         $conectar = null;
     }
     
