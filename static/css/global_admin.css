@@ -86,4 +86,13 @@
 .container_title_content_proyect{
     margin-bottom: 25px;
 }
+.container_content_proyect{
+    max-width: 450px; 
+    width: 100%; 
+    display: inline-block; 
+    text-align: center; 
+    margin-right: 10px; 
+    vertical-align: top;
+    cursor: pointer 
+}
 

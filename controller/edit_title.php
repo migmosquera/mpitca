@@ -9,11 +9,19 @@ if (isset($_POST['btnEditarTitulo'])) {
     $img = $_FILES["imgTitle"]["name"];
     $id = $_POST['idTitle'];
     $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
+    echo basename($_FILES["imgTitle"]["name"]);
+    if (basename($_FILES["imgTitle"]["name"]) == ''){
+        $img_url = $_POST['srcImgDelete'];
+        $title_edit = Title::editTitle($id,$nameTitle, $img_url);
+        $msjSaveTitle = 'Se ha modificado el titulos';
+    }
     if ($fileType == 'jpg' or $fileType == 'png') {
         if (move_uploaded_file($_FILES['imgTitle']['tmp_name'], $target_file)) {
             $msjSaveTitle = "el titulo se ha editado";
             $img_url = 'upload/' . basename($_FILES["imgTitle"]["name"]);
+            unlink($_POST['srcImgDelete']);
             $title_edit = Title::editTitle($id,$nameTitle, $img_url);
+            $msjSaveTitle = 'Se ha modificado el titulos';
         } else {
             $msjSaveTitle = 'Error al subir la imagen';
             echo $_FILES['imgTitle']['error'];

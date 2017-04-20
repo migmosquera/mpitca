@@ -61,8 +61,8 @@ include_once 'controller/search_content.php';
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="container_title_content_proyect">
                             <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre de la compañia" style="width: 275px;margin-right: 20px;"/>
-                            <select id="title_proyect" name="title_proyect">
-                                <option>Seleccione un Títulos</option>
+                            <select id="title_proyect" name="title_proyect" style="height: 29px;">
+                                <option>Seleccione un Título</option>
                                 <?php foreach ($title as $item): ?>
                                     <option id="<?php echo $item['id'] ?>" value="<?php echo $item['id'] ?>" ><?php echo $item['name'] ?></option>
                                 <?php endforeach; ?> 
@@ -75,12 +75,10 @@ include_once 'controller/search_content.php';
                 <div class="sub_container_config" style="">
                     <p><strong>Lista de Proyectos</strong></p>
                     <?php foreach ($proyect as $item): ?>
-                        <div id="containerContent_<?php echo $item['id'] ?>" class="container_title_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>">
+                        <div id="containerContent_<?php echo $item['id'] ?>" class="container_content_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>">
                             <p style="width: 84%; display: inline-block;"><?php echo $item['name_company'] ?></p>
                         </div>
-
                     <?php endforeach; ?> 
-                        
                 </div>
             </div>
         </section>

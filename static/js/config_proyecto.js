@@ -14,27 +14,21 @@ function init() {
 
 function View() {
     console.log("((View))");
-    
-}
-
-function Controller() {
-    console.log("((Controller))");
-
     $(".container_title_proyect").on("click", function () {
-        $("#btnEliminarTitulo").attr('lang',$(this)[0].title)
+        $("#btnEliminarTitulo").attr('lang',$(this)[0].title);
         $("#textNameTitle").val($(this)[0].title);
-        $("#srcImgDelete").val($(this)[0].align)
+        $("#srcImgDelete").val($(this)[0].align);
         var idTitle = $(this)[0].id;
         $("#idTitle").val(idTitle.replace('containerPhoto_',''));
         $("#btnGuardarTitulo").addClass('label_hide');
         $("#btnEditarTitulo").removeClass('label_hide');
         $("#btnEliminarTitulo").removeClass('label_hide');
         $("#btnCancelarTitulo").removeClass('label_hide');
-        $("#container_delete").addClass('label_hide')
-        $("#textNameTitle").removeClass('label_hide')
-        $("#imageContainer").removeClass('label_hide')
-        $("#imgTitle").removeClass('label_hide')
-        $("#msjTitle").removeClass('label_hide')
+        $("#container_delete").addClass('label_hide');
+        $("#textNameTitle").removeClass('label_hide');
+        $("#imageContainer").removeClass('label_hide');
+        $("#imgTitle").removeClass('label_hide');
+        $("#msjTitle").removeClass('label_hide');
         var image_holder = $("#imageContainer");
         $("#img_container_title").remove();
         $("<img />", {
@@ -44,32 +38,31 @@ function Controller() {
             "name": 'img_container_title'
         }).appendTo(image_holder);
         
-    })
+    });
     
     $(".btn_cancelar_titulo").on("click", function () {
         $("#textNameTitle").val($(this)[0].title);
         $("#idTitle").val('');
-        $("#textNameTitle").removeClass('label_hide')
-        $("#imageContainer").removeClass('label_hide')
-        $("#imgTitle").removeClass('label_hide')
+        $("#textNameTitle").removeClass('label_hide');
+        $("#imageContainer").removeClass('label_hide');
+        $("#imgTitle").removeClass('label_hide');
         $("#btnGuardarTitulo").removeClass('label_hide');
-        $("#container_delete").addClass('label_hide')
+        $("#container_delete").addClass('label_hide');
         $("#btnEditarTitulo").addClass('label_hide');
         $("#btnEliminarTitulo").addClass('label_hide');
         $("#btnCancelarTitulo").addClass('label_hide'); 
-        $("#msjTitle").removeClass('label_hide')
+        $("#msjTitle").removeClass('label_hide');
         $("#img_container_title").remove();
-    })
+    });
     
     $("#btnEliminarTitulo").on("click", function () {
-        $("#textNameTitle").addClass('label_hide')
-        $("#imageContainer").addClass('label_hide')
-        $("#imgTitle").addClass('label_hide')
-        $("#msjTitle").addClass('label_hide')
-        $("#container_delete").removeClass('label_hide')
-        $("#titleDelete").text($(this)[0].lang)
-        //$("#srcImgDelete").text($(this)[0].lang)
-    })
+        $("#textNameTitle").addClass('label_hide');
+        $("#imageContainer").addClass('label_hide');
+        $("#imgTitle").addClass('label_hide');
+        $("#msjTitle").addClass('label_hide');
+        $("#container_delete").removeClass('label_hide');
+        $("#titleDelete").text($(this)[0].lang);
+    });
     
     $("#imgTitle").on('change', function () {
         var countFiles = $(this)[0].files.length;
@@ -95,6 +88,12 @@ function Controller() {
         }
 
     });
+}
+
+function Controller() {
+    console.log("((Controller))");
+
+    
 
 
 }
