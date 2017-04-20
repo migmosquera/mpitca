@@ -73,4 +73,17 @@
    color: 1px solid #007325;
    
 }
+.title{
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: rgba(0, 42, 140, 0.13);
+}
+.mce-tinymce{
+   width: 89% !important;
+   margin: 0 auto !important;
+}
+.container_title_content_proyect{
+    margin-bottom: 25px;
+}
 

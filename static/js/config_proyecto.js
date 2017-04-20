@@ -14,7 +14,7 @@ function init() {
 
 function View() {
     console.log("((View))");
-
+    
 }
 
 function Controller() {

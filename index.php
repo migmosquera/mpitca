@@ -18,12 +18,6 @@
         <!-- font-awesome icons -->
         <link href="static/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="all" />
-        <!-- //font-awesome icons -->
-        <!-- font -->
-        <!--<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-        <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-        <!-- //font -->
         <script src="static/js/jquery-1.11.1.min.js"></script>
         <script src="static/js/bootstrap.js"></script>
         <!-- light-box -->
