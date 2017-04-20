@@ -95,4 +95,11 @@
     vertical-align: top;
     cursor: pointer 
 }
+.container_button{
+    margin-top: 20px;
+}
+.msj_proyect{
+    color: green;
+    margin-top: 10px;
 
+}

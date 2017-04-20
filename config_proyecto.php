@@ -5,6 +5,8 @@ include_once 'controller/edit_title.php';
 include_once 'controller/delete_title.php';  
 include_once 'controller/search_title.php';  
 include_once 'controller/save_content_proyect.php';
+include_once 'controller/edit_content.php';
+include_once 'controller/delete_content.php';
 include_once 'controller/search_content.php';
 ?>
 <html>
@@ -36,7 +38,7 @@ include_once 'controller/search_content.php';
                             <input value="SI" id="delete" name="delete" type="submit" class="button_delete">
                             <p class="button_not_delete btn_cancelar_titulo" id="notDelete">NO</p>
                         </div>
-                        <p style="color: green" id="msjTitle"><?php echo $msjSaveTitle ; ?></p>
+                        <p class="msj_proyect" id="msjTitle"><?php echo $msjSaveTitle ; ?></p>
                         <input type="submit" name="btnGuardarTitulo" id="btnGuardarTitulo" value="Guardar">
                         <input type="submit" name="btnEditarTitulo" id="btnEditarTitulo" value="Editar" class="label_hide">
                         <input type="button" name="btnEliminarTitulo" id="btnEliminarTitulo" value="Eliminar" class="label_hide">
@@ -60,6 +62,7 @@ include_once 'controller/search_content.php';
                 <div class="sub_container_config">
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="container_title_content_proyect">
+                            <input type="hidden" id="idProyect" name="idProyect" />
                             <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre de la compañia" style="width: 275px;margin-right: 20px;"/>
                             <select id="title_proyect" name="title_proyect" style="height: 29px;">
                                 <option>Seleccione un Título</option>
@@ -68,8 +71,20 @@ include_once 'controller/search_content.php';
                                 <?php endforeach; ?> 
                             </select>
                         </div>
-                        <textarea name="tinymce" style="width: 90%;margin: 0 auto;"></textarea>
-                        <input type="submit" value="Guardar" id="save_content_proyect" name="save_content_proyect" style="margin-top: 20px;"/>
+                        <textarea name="tinymce" class="tinymce" style="width: 90%;margin: 0 auto;"></textarea>
+                        <div id="container_delete_content" class="container_delete_title label_hide">
+                            <p style="margin-top: 10px;">Deseas Eliminar el Proyecto</p>
+                            <p id="nameCompanyDelete" name="nameCompanyDelete"></p>
+                            <input value="SI" id="deleteProyect" name="deleteProyect" type="submit" class="button_delete">
+                            <p class="button_not_delete btn_cancelar_content" id="notDeleteContent">NO</p>
+                        </div>
+                        <p class="msj_proyect" id="msjTitle"><?php echo $msjSaveContent ; ?></p>
+                        <div class="container_button">
+                            <input type="submit" value="Guardar" id="btnSaveContent" name="btnSaveContent"/>
+                            <input type="submit" name="btnEditarContent" id="btnEditarContent" value="Editar" class="label_hide">
+                            <input type="button" name="btnEliminarContent" id="btnEliminarContent" value="Eliminar" class="label_hide">
+                            <input type="button" name="btnCancelarContent" id="btnCancelarContent" class="btn_cancelar_content label_hide" value="Cancelar" >
+                        </div>
                     </form>
                 </div>
                 <div class="sub_container_config" style="">

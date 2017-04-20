@@ -1,6 +1,6 @@
 <?php
 $msjSaveContent = '';
-if (isset($_POST['save_content_proyect'])) {
+if (isset($_POST['btnSaveContent'])) {
    require_once 'model/Proyect.php';
    $name_company = $_POST['name_company'];
    $content = $_POST['tinymce'];

@@ -52,13 +52,13 @@ class Proyect {
         }
         $conectar = null;
     }
-    public static function editContent($id, $content, $id_title) {
-
+    public static function editContent($id, $content, $id_title, $name_company) {
         $conectar = new Conection();
-        $query = $conectar->prepare('UPDATE ' . self::TABLA  . ' SET content_proyect=:content, id_title=:id_title WHERE id=:id');
+        $query = $conectar->prepare('UPDATE ' . self::TABLA  . ' SET content_proyect=:content, id_title=:id_title, name_company=:name_company WHERE id=:id');
         $query->bindParam(':id', $id);
         $query->bindParam(':content', $content);
         $query->bindParam(':id_title', $id_title);
+        $query->bindParam(':name_company', $name_company);
         $query->execute();
         $data = $query->fetchAll();
         return $data;
@@ -66,7 +66,7 @@ class Proyect {
     }
     
     public static function deleteContent($id) {
-
+        
         $conectar = new Conection();
         $query = $conectar->prepare('DELETE FROM ' . self::TABLA  . ' WHERE id=:id');
         $query->bindParam(':id', $id);

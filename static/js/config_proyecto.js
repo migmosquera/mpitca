@@ -14,6 +14,7 @@ function init() {
 
 function View() {
     console.log("((View))");
+    
     $(".container_title_proyect").on("click", function () {
         $("#btnEliminarTitulo").attr('lang',$(this)[0].title);
         $("#textNameTitle").val($(this)[0].title);
@@ -63,7 +64,35 @@ function View() {
         $("#container_delete").removeClass('label_hide');
         $("#titleDelete").text($(this)[0].lang);
     });
-    
+    $('.container_content_proyect').on("click",function (){
+        console.log("paso por aqui");
+        tinyMCE.activeEditor.setContent('');
+        var idProyect = $(this)[0].id;
+        $("#idProyect").val(idProyect.replace('containerContent_',''));
+        $("#nameCompanyDelete").text($(this)[0].lang);
+        $("#btnEditarContent").removeClass('label_hide');
+        $("#btnEliminarContent").removeClass('label_hide');
+        $("#btnCancelarContent").removeClass('label_hide');
+        $("#btnSaveContent").addClass('label_hide');
+        $("#name_company").val($(this)[0].lang);
+        $('#title_proyect option[value="'+$(this)[0].align+'"]').prop('selected', true);
+        tinymce.activeEditor.execCommand('mceInsertContent', false, $(this)[0].title);
+    });
+    $("#btnEliminarContent").on("click", function () {
+        $("#title_proyect").addClass('label_hide');
+        $("#name_company").addClass('label_hide');
+        $(".tinymce").addClass('label_hide');
+        $("#mceu_11").addClass('label_hide');
+        $("#container_delete_content").removeClass('label_hide');
+        $("#nameCompanyDelete").text($(this)[0].lang);
+    });
+    $(".btn_cancelar_content").on('click',function (){
+        $("#title_proyect").removeClass('label_hide');
+        $("#name_company").removeClass('label_hide');
+        $(".tinymce").removeClass('label_hide');
+        $("#mceu_11").removeClass('label_hide');
+        $("#container_delete_content").addClass('label_hide');
+    });
     $("#imgTitle").on('change', function () {
         var countFiles = $(this)[0].files.length;
         var imgPath = $(this)[0].value;
