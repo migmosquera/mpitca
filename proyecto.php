@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
-    include_once 'controller/search_title.php';  
+    include_once 'controller/search_all_proyect.php';  
+    include_once 'controller/search_content_proyect.php';  
+    
 ?>
 <html lang="en">
 
@@ -21,6 +23,7 @@
         <script src="static/js/jquery-1.11.1.min.js"></script>
         <script src="static/js/bootstrap.js"></script>
         <link rel="stylesheet" href="static/css/proyecto.css" type="text/css" media="all" />
+        
     </head>
     <body style="background-color: #133F54">
         <!-- banner -->
@@ -80,15 +83,15 @@
                 </div>
                
                 <div id="container_content_sub_proyect" class="container_content_sub_proyect">
-                    <?php foreach ($title as $item): ?>
-                        <div id="redesEmpresariales" class="container_proyectos">    
+                    <?php foreach ($title_total as $item): ?>
+                        <div id="container_<?php echo $item['id'] ?>" class="container_proyectos">    
                                 <h4 class="title_proyecto"><?php echo $item['name'] ?></h4>
                                 <div id="" class="sub_container_proyect">
                                     <div class="container_imagen_proyecto">
                                         <img style="border-radius: 5px;" src="<?php echo $item['img_title'] ?>" />
                                     </div>
                                 </div>
-                                <p id="redesEmpresarialesInfo" class="text_more_info">Ver Información</p>
+                                <button type="button" id="button_<?php echo $item['id'] ?>" class="text_more_info">Ver Información</button>
                         </div>
                     <?php endforeach; ?> 
                     <!--<div id="seguridadPerimetral" class="container_proyectos">
@@ -146,7 +149,7 @@
                         <p id="estudiosRedesInfo" class="text_more_info">Ver Información</p>
                     </div>--> 
                 </div>
-                <div id="redesEmpresarialesModal" class="labelHide container_modal_proyect container">
+                <!--<div id="redesEmpresarialesModal" class="labelHide container_modal_proyect container">
                     <p class="closet_modal closetModal" id="closetModal">X</p>
                     <h4 class="title_proyecto_modal">Redes Empresariales</h4>
                     <div class="container_text_modal">
@@ -263,7 +266,7 @@
                     </div>
                    
                     <p id="closet_modal" class="button_closet_modal closetModal">Cerrar</p>    
-                </div>
+                </div>-->
                 
             </div>
         </div>
@@ -303,7 +306,7 @@
         </div>
         <script src="static/js/responsiveslides.min.js"></script>
 
-
+        <script type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="static/js/move-top.js"></script>
         <script type="text/javascript" src="static/js/easing.js"></script>
         <script type="text/javascript" src="static/js/aos.js"></script>

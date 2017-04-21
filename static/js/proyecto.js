@@ -14,51 +14,39 @@ function init() {
 
 function View() {
     console.log("((View))");
-   $("#redesEmpresariales").on('click',function(){
-       $("#redesEmpresarialesModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $(".closetModal").on('click',function(){
-       $("#redesEmpresarialesModal").addClass('labelHide')
-       $("#seguridadPerimetralModal").addClass('labelHide')
-       $("#sistemaInformacionModal").addClass('labelHide')
-       $("#sistemaTelefoniaModal").addClass('labelHide')
-       $("#tecnologiaInalambricaModal").addClass('labelHide')
-       $("#videoVigilanciaModal").addClass('labelHide')
-       $("#estudiosRedesModal").addClass('labelHide')
-       $("#container_content_sub_proyect").removeClass('container_opasicity')
-   })
-   $("#seguridadPerimetralInfo").on('click',function(){
-       $("#seguridadPerimetralModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#sistemaInformacionInfo").on('click',function(){
-       $("#sistemaInformacionModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#tecnologiaInalambricaInfo").on('click',function(){
-       $("#tecnologiaInalambricaModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#videoVigilanciaInfo").on('click',function(){
-       $("#videoVigilanciaModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#sistemaTelefoniaInfo").on('click',function(){
-       console.log("paso por aqui");
-       $("#sistemaTelefoniaModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
-   $("#estudiosRedesInfo").on('click',function(){
-       $("#estudiosRedesModal").removeClass('labelHide')
-       $("#container_content_sub_proyect").addClass('container_opasicity')
-   })
+    
+    $(".text_more_info").on('click',function (){
+        var idProyect = $(this)[0].id.replace("button_","");
+        controller.sendProyect(idProyect);
+    });
 
 }
 
 function Controller() {
     console.log("((Controller))");
-
+    
+    this.sendProyect = function(id){
+        var data = {
+            "id": id,
+        };
+        var url = "controller/search_content_proyect.php";
+        console.log(data);
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function (data)
+            {   
+                var json = JSON.parse(data);
+               console.log(json);
+               for (var i = 0; i < json.length; i++) {
+                    var counter = json[i];
+                    console.log(counter.content_proyect);
+                }
+               console.log("llego");
+            }
+        });
+    };
   
 
 }
