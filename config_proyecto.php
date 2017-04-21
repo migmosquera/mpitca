@@ -27,7 +27,7 @@ include_once 'controller/search_content.php';
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <input type="hidden" id="idTitle" name="idTitle" />
                         <p><strong>Registrar Título de Proyectos</strong></p>
-                        <input type="text" placeholder="Nombre del Titulo" name="textNameTitle" id="textNameTitle" style="width: 250px;margin-bottom: 10px;" />
+                        <input type="text" placeholder="Nombre del Titulo" name="textNameTitle" id="textNameTitle" style="width: 250px;margin-bottom: 10px;" required/>
                         <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
                         <p id="imageContainer" class="imagenContainer" ></p>
                         <input type="file" id="imgTitle" name="imgTitle"  style="margin: 0 auto" >
@@ -45,16 +45,32 @@ include_once 'controller/search_content.php';
                         <input type="button" name="btnCancelarTitulo" id="btnCancelarTitulo" class="btn_cancelar_titulo label_hide" value="Cancelar" >
                     </form>
                 </div>
+                <hr class="separador" width=75%/>
                 <div class="sub_container_config" style="">
                     <p><strong>Lista de Títulos de Proyectos</strong></p>
-                    <?php foreach ($title as $item): ?>
-                    <div id="containerPhoto_<?php echo $item['id'] ?>" class="container_title_proyect" title="<?php echo $item['name'] ?>" lang="<?php echo $item['img_title'] ?>" align="<?php echo $item['img_title'] ?>">
-                            <p id="name_<?php echo $item['name'] ?>" style="width: 84%; display: inline-block;"><?php echo $item['name'] ?></p>
-                            <img id="imagenUser_<?php echo $item['id'] ?>" style="width: 65px; display: inline-block;height: 48px;" src=" <?php echo $item['img_title'] ?>" alt="" />
-                        </div>
+                    <div class="container_all_title">
+                        <?php foreach ($titlePagination as $item): ?>
+                        <div id="containerPhoto_<?php echo $item['id'] ?>" class="container_title_proyect" title="<?php echo $item['name'] ?>" lang="<?php echo $item['img_title'] ?>" align="<?php echo $item['img_title'] ?>">
+                                <p id="name_<?php echo $item['name'] ?>" class="text_title_proyect"><?php echo $item['name'] ?></p>
+                                <img id="imagenUser_<?php echo $item['id'] ?>" class="img_title_proyect" src=" <?php echo $item['img_title'] ?>" alt="" />
+                            </div>
 
-                    <?php endforeach; ?> 
-                        
+                        <?php endforeach; ?> 
+                    </div>
+                    <?php
+                        if ($pagina != 1)
+                            echo '<a style="border-bottom: 0" href="?pag=' . ($pagina - 1) . '"> < </a>';
+                        for ($i = 0; $i < $pagination; $i++) {
+                            $pagina_texto = $i + 1;
+                            $clase = "";
+
+                            if ($pagina == $pagina_texto)
+                                $clase = 'active';
+                            echo '<a class="pagination ' . $clase . ' " href="?pag=' . $pagina_texto . '">' . $pagina_texto . '</a>';
+                        }
+                        if ($pagina != $pagination)
+                            echo '<a style="border-bottom: 0" href="?pag=' . ($pagina + 1) . '"> > </a>';
+                    ?>    
                 </div>
             </div>
             <div  class="container_content_config">
@@ -63,10 +79,10 @@ include_once 'controller/search_content.php';
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="container_title_content_proyect">
                             <input type="hidden" id="idProyect" name="idProyect" />
-                            <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre de la compañia" style="width: 275px;margin-right: 20px;"/>
-                            <select id="title_proyect" name="title_proyect" style="height: 29px;">
-                                <option>Seleccione un Título</option>
-                                <?php foreach ($title as $item): ?>
+                            <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre de la compañia" class="text_name_company" required/>
+                            <select id="title_proyect" name="title_proyect" style="height: 29px;" required>
+                                <option value="" >Seleccione un Título</option>
+                                <?php foreach ($title_total as $item): ?>
                                     <option id="<?php echo $item['id'] ?>" value="<?php echo $item['id'] ?>" ><?php echo $item['name'] ?></option>
                                 <?php endforeach; ?> 
                             </select>
@@ -87,18 +103,35 @@ include_once 'controller/search_content.php';
                         </div>
                     </form>
                 </div>
+                <hr class="separador" width=75%/>
                 <div class="sub_container_config" style="">
                     <p><strong>Lista de Proyectos</strong></p>
-                    <?php foreach ($proyect as $item): ?>
-                        <div id="containerContent_<?php echo $item['id'] ?>" class="container_content_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>">
-                            <p style="width: 84%; display: inline-block;"><?php echo $item['name_company'] ?></p>
-                        </div>
-                    <?php endforeach; ?> 
+                    <div class="container_content_content_proyect">
+                        <?php foreach ($proyect as $item): ?>
+                            <div id="containerContent_<?php echo $item['id'] ?>" class="container_content_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>">
+                                <p style="width: 84%; display: inline-block;"><?php echo $item['name_company'] ?></p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <?php
+                        if ($paginaContent != 1)
+                            echo '<a style="border-bottom: 0" href="?pagContent=' . ($pagina - 1) . '"> < </a>';
+                        for ($i = 0; $i < $paginationContent; $i++) {
+                            $pagina_texto = $i + 1;
+                            $clase = "";
+
+                            if ($paginaContent == $pagina_texto)
+                                $clase = 'active';
+                            echo '<a class="pagination ' . $clase . ' " href="?pagContent=' . $pagina_texto . '">' . $pagina_texto . '</a>';
+                        }
+                        if ($paginaContent != $paginationContent)
+                            echo '<a style="border-bottom: 0" href="?pagContent=' . ($pagina + 1) . '"> > </a>';
+                    ?>  
                 </div>
             </div>
         </section>
     <script type="text/javascript" src="static/js/config_proyecto.js"></script>
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yliivq26qrkopuau1pn5tl7cilixbqgvi8iiotfm4w2511u7"></script>
     <script>tinymce.init({ selector:'textarea' });</script>
     </body>
 </html>

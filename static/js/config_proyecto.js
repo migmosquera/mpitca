@@ -65,7 +65,6 @@ function View() {
         $("#titleDelete").text($(this)[0].lang);
     });
     $('.container_content_proyect').on("click",function (){
-        console.log("paso por aqui");
         tinyMCE.activeEditor.setContent('');
         var idProyect = $(this)[0].id;
         $("#idProyect").val(idProyect.replace('containerContent_',''));
@@ -87,11 +86,19 @@ function View() {
         $("#nameCompanyDelete").text($(this)[0].lang);
     });
     $(".btn_cancelar_content").on('click',function (){
+        tinyMCE.activeEditor.setContent('');
+        $("#idProyect").val('');
+        $("#name_company").val('');
+        $('#title_proyect option[value=""]').prop('selected', true);
         $("#title_proyect").removeClass('label_hide');
         $("#name_company").removeClass('label_hide');
         $(".tinymce").removeClass('label_hide');
         $("#mceu_11").removeClass('label_hide');
         $("#container_delete_content").addClass('label_hide');
+        $("#btnEditarContent").addClass('label_hide');
+        $("#btnEliminarContent").addClass('label_hide');
+        $("#btnCancelarContent").addClass('label_hide');
+        $("#btnSaveContent").removeClass('label_hide');
     });
     $("#imgTitle").on('change', function () {
         var countFiles = $(this)[0].files.length;

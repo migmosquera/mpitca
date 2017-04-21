@@ -75,15 +75,23 @@ class Title {
         return $data;
         $conectar = null;
     }
-    
-    public static function searchTitle() {
+    public static function allTitle() {
 
         $conectar = new Conection();
-        $query = $conectar->prepare('SELECT * FROM ' . self::TABLA );
+        $query = $conectar->prepare('SELECT * FROM ' . self::TABLA . ' ORDER BY id DESC');
         $query->execute();
         $data = $query->fetchAll();
         return $data;
         $conectar = null;
     }
-    
+    public static function paginationTitle($limit,$total)
+    {
+        $conectar = new Conection();
+        $query = $conectar -> prepare('SELECT * FROM ' . self::TABLA . ' ORDER BY id DESC LIMIT ' .$limit. ' , ' .$total);
+        $query->execute();
+        $data = $query->fetchAll();
+        return $data;
+        $conectar = null;
+    }
+
 }

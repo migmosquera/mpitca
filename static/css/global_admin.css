@@ -11,6 +11,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
+    text-align: center;
 }
 .sub_container_config{
     width: 49%;
@@ -101,5 +102,89 @@
 .msj_proyect{
     color: green;
     margin-top: 10px;
-
+}
+.pagination{
+    border: 1px solid #106396;
+    width: 22px;
+    margin-left: 5px !important;
+}
+#mceu_25{
+    height: 215px !important;
+}
+#tinymce_ifr{
+    height: 215px !important;
+}
+.container_all_title{
+    height: 196px;
+}
+.container_content_content_proyect{
+    height: 327px;
+}
+.separador{
+    border-color: rgb(0, 42, 117);
+    display: none;
+}
+.text_title_proyect{
+    width: 84%; 
+    display: inline-block;
+}
+.img_title_proyect{
+    width: 65px; 
+    display: inline-block;
+    height: 48px;
+}
+.text_name_company{
+    width: 275px;
+    margin-right: 20px;
+}
+@media(max-width:1250px){
+    #title_proyect{
+        margin-top: 15px;
+    }
+    .text_name_company{
+        text-align: center;
+    }
+}
+@media(max-width:1000px){
+    .sub_container_config{
+        width: 100%;
+    }
+    .separador{
+        display: block;
+    }
+    .container_title_proyect{
+        max-width: 500px;
+    }
+}
+@media(max-width:600px){
+    .container_title_proyect {
+        max-width: 430px;
+    }
+    .text_title_proyect{
+        width: 80%; 
+    }
+    .sub_container_config{
+        width: 95%;
+    }
+}
+@media(max-width:415px){
+    
+    .text_title_proyect{
+        width: 75%; 
+        font-size: 14px;
+    }
+    .sub_container_config{
+        width: 90%;
+    }
+    #imgTitle{
+        font-size: 13px;
+    }
+    .img_title_proyect{
+        width: 55px;
+        height: 40px;
+    }
+    .text_name_company{
+        width: 244px;
+        margin: 0 auto;
+    }
 }
