@@ -36,7 +36,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li><a href="config_proyecto.php" class="active">Configuración de Proyecto</a></li>
-                                <li><a href="controller/login.php"   class="scroll">Salir</a></li>
+                                <li><a href="controller/logout.php"   class="scroll">Salir</a></li>
                             </ul>
 
                         </div><!-- /.navbar-collapse -->
