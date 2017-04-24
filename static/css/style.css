@@ -60,13 +60,16 @@ html, body{
     background-color: #E59D03;
     border-radius: 5px;
     color: #fff;
-    float: right;
     padding: 3px;
     cursor: pointer;
     margin-top: 3%;
+    margin-left: 95%;
 }
 .labelHide{
-    display: none;
+    display: none !important;
+}
+.labelShow{
+    display: block !important;
 }
 .footer_contact_me{
     color: #c0c0c0;

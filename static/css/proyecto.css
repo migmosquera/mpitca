@@ -81,6 +81,14 @@
     font-weight: bold;
     font-size: 26px;
 }
+.container_proyect{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.content_proyect{
+    margin-bottom: 3%;
+}
 @media(max-width:1500px){
     .container_content_sub_proyect{
         width: 85%;

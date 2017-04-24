@@ -15,7 +15,6 @@
         <!-- css -->
         <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
         <!--// css -->
-        <!-- font-awesome icons -->
         <link href="static/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="all" />
         <script src="static/js/jquery-1.11.1.min.js"></script>
@@ -87,7 +86,7 @@
                             <img class="display_inline image_none" src="static/images/redes.png" >
                             <div   class="container_carrousel_text">
                                 <h3  >Instalación y Configuración de Plataformas de Red</h3>
-                                <p>MPIT te ayuda a la configuración e instalación de equipos Cableado Estructurado, Routers, Switches, Firewalls, APs y muchos mas.</p>
+                                <p>MPIT te apoya en la instalación y configuración de equipos, Cableado Estructurado, Routers, Switches, Firewalls, Ambientes inalámbricos y mucho mas.</p>
                             </div>
                         </div>
 
@@ -103,7 +102,7 @@
                             <img src="static/images/telefonia.png" class="display_inline image_none"   >
                             <div class="container_carrousel_text">
                                 <h3>Instalación y Configuración de Plataformas de Telefonía IP y Tradicional</h3>
-                                <p>Necesitas comunicarte con clientes nacionales o internacionales, MPIT te instala tu Telefonía IP o Tradicional.</p>
+                                <p>Necesita comunicarse con clientes, proveedores y asociados nacionales o internacionales? MPIT le instala su Infraestructura de Comunicaciones IP o Tradicional.</p>
                             </div>
                         </div>
 
@@ -133,8 +132,8 @@
         <div class="container">
             <div class="about-heading">
                 <h3 class="title_firt" >En nuestra empresa se ejercen las Mejores Prácticas en:</h3>
-                <p class="title_second" >Sistema de Información e Infraestructura </p>
-                <p class="title_third" >Para crecer y hacer crecer a nuestros clientes</p>
+                <p class="title_second" >Sistemas de Información e Infraestructura </p>
+                <h2 class="title_third" ><strong>Para crecer y hacer crecer a nuestros clientes</strong></h2>
             </div>
             <div style="margin-top: 11px;" data-aos="zoom-out-up">
                 <div class="display_block_width">
@@ -240,7 +239,7 @@
 
             </div>
             <div class="container_certificate">
-                <h3 style="text-align: center"><strong>Certificados en:</strong></h3>
+                <h3 style="text-align: center"><strong>Certificados y Socios de Negocios:</strong></h3>
                 <div class="display_block_width">
                     <div class="container_img_certificate" >
                         <img src="static/images/certificados/cisco.png" />
@@ -328,13 +327,6 @@
             </div>
         </div>
     </div>
-
-    <!-- //footer -->
-    <!--<div class="copyright">
-            <div class="container">
-                    <p>© 2017 Swim Care. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-            </div>
-    </div>-->
     <script src="static/js/responsiveslides.min.js"></script>
 
 
@@ -345,12 +337,7 @@
     <script type="text/javascript" src="static/js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
     <script type="text/javascript">
-        /*jQuery(document).ready(function($) {
-         $(".scroll").click(function(event){		
-         event.preventDefault();
-         $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-         });
-         });*/
+  
     </script>
     <!-- here stars scrolling icon -->
     <script type="text/javascript">

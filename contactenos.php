@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
     require_once  'controller/send_email.php';
+    include_once 'controller/search_all_proyect.php';  
 ?>
 <html lang="en">
 
@@ -72,231 +73,123 @@
         </div>
 
         <div class="container_contac_me" >
+            
             <div class="container_servicios">
                 <div style="display: block">
                     <div class="linea_degradada_izquierda"></div>
                     <h3 class="title_serivicios"  >Contactenos</h3>	
                     <div class="linea_degradada_derecha"></div>
                 </div>
-                <div class="container_contac_me_bussines">
-                    <p><strong>Mejores Prácticas en Tecnología de Información, C.A.</strong></p>
-                    <p><strong>MPITCA</strong></p>
-                    <p>Urb. El Naranjal 2 Calle 198-A, Casa 120-92</p>
-                    <p>Naguanagua - Valencia - Edo. Carabobo 2005</p>
-                    <p>Venezuela</p>
-                    <div style="display: block">
-                        <img style="display: inline-block" src="static/images/fax-top-view.png" />
-                        <p class="text_data_contant_me">58-241-8674543</p>
+                <div class="content_form">
+                    <p class="msj_send_email" style=""><?php echo $msjSendEmail; ?></p>
+                    <div class="content_right">
+                        <p>Aquí podrás perdí cotizaciones o hacernos cualquier pregunta. En brevedad les responderemos cualquier duda, cotización o pregunta que realices.</p>
+                       
+                        <form action="" method="post" accept-charset="utf-8">
+                            <select id="title_contact" name="title_contact" class="input_form select_form" required>
+                                <option value="" >Indique el servicio a contactar</option>
+                                <?php foreach ($title_total as $item): ?>
+                                    <option id="<?php echo $item['id'] ?>" value="<?php echo $item['name'] ?>" ><?php echo $item['name'] ?></option>
+                                <?php endforeach; ?> 
+                                    <option value="0">Otro</option>    
+                            </select>
+                            <label id="labelErrorTitle" class="labelError labelHide"></label>
+                            <input type="text" id="name_contact" name="name_contact" placeholder="Ingrese el Nombre y Apellido" class="input_form" required>
+                            <label id="labelErrorName" class="labelError labelHide"></label>
+                            <input type="text" id="email_contact" name="email_contact" placeholder="Ingrese su Correo Electrónico" class="input_form" required>
+                            <label id="errorMail" class="labelError labelHide"></label>
+                            <input type="text" id="tel_contact" name="tel_contact" placeholder="Ingrese su Teléfono" class="input_form" required>
+                            <label id="labelErrorPhone" class="labelHide labelError"></label>
+                            <textarea placeholder="Ingrese el Contenido" id="content_contact" name="content_contact" class="text_area_form" required></textarea>
+                            <label id="labelErrorComment" class="labelHide labelError"></label>
+                            <p class="msj_send_email">Para enviar el correo debe de llenar todos los campos</p>
+                            <input type="submit" id="sendEmail"  name="sendEmail" class="button_send_email" value="Enviar" disabled />
+                            
+                        </form>
                     </div>
-                    <div style="display: block">
-                        <button type="button" data-toggle="modal" data-target="#myModalMpitca" style="border: none;background: none;" >
-                            <img style="display: inline-block" src="static/images/envelope.png" />
-                            <p class="text_data_contant_me">mpit@mpitca.com.ve</p>
-                        </button>
-                    </div>
-                </div>
-                <div class="container_contac_me_person">
-                    <p><strong>Charles Chaderton</strong></p>
-                    <p>CIO - Chief Information Officer</p>
+                    <div class="content_left">
+                        <p><strong>Contactos</strong></p>
+                         <div style="margin-top: 15px;">
+                            <p><strong>MPITCA</strong></p>
+                            <p>Urb. El Naranjal 2 Calle 198-A, Casa 120-92</p>
+                            <p>Naguanagua - Valencia - Edo. Carabobo 2005</p>
+                            <p>Venezuela</p>
+                            <div style="display: block">
+                                <img style="display: inline-block;width: 20px" src="static/images/fax-top-view.png" />
+                                <p class="text_data_contant_me">58-241-8674543</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <p><strong>Jorge Mosquera</strong></p>
+                            <p>CDO - Chief Information Officer</p>
 
-                    <div style="display: block">
-                        <img style="display: inline-block" src="static/images/smartphone-call.png" />
-                        <p class="text_data_contant_me">58-414-4225146</p>
-                    </div>
-                    <div style="display: block">
-                        <button type="button" data-toggle="modal" data-target="#myModalCharles" style="border: none;background: none;" >
-                            <img style="display: inline-block" src="static/images/envelope.png" />
-                            <p class="text_data_contant_me">charles.chaderton@mpitca.com.ve</p>
-                        </button>
-                    </div>
-                </div>
-                <div class="container_contac_me_person">
-                    <p><strong>Jorge Mosquera</strong></p>
-                    <p>CDO - Chief Information Officer</p>
+                            <div style="display: block">
+                                <img style="display: inline-block;width: 20px" src="static/images/smartphone-call.png" />
+                                <p class="text_data_contant_me">58-424-4460910</p>
+                            </div>
+                            <div style="display: block">
+                                <img style="display: inline-block;width: 20px" src="static/images/envelope.png" />
+                                <p class="text_data_contant_me">jorge.mosquera@mpitca.com.ve</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <p><strong>Charles Chaderton</strong></p>
+                            <p>CIO - Chief Information Officer</p>
 
-                    <div style="display: block">
-                        <img style="display: inline-block" src="static/images/smartphone-call.png" />
-                        <p class="text_data_contant_me">58-424-4460910</p>
+                            <div style="display: block">
+                                <img style="display: inline-block;width: 20px" src="static/images/smartphone-call.png" />
+                                <p class="text_data_contant_me">58-414-4225146</p>
+                            </div>
+                            <div style="display: block">
+                                <img style="display: inline-block;width: 20px" src="static/images/envelope.png" />
+                                <p class="text_data_contant_me">charles.chaderton@mpitca.com.ve</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="display: block">
-                        <button type="button" data-toggle="modal" data-target="#myModalJormos" style="border: none;background: none;" >
-                            <img style="display: inline-block" src="static/images/envelope.png" />
-                            <p class="text_data_contant_me">jorge.mosquera@mpitca.com.ve</p>
-                        </button>
+                </div>    
+            </div>    
+  
+            <div class="footer" style="margin-top: 25px;" >
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-grids" style="text-align: center; display: block;margin: 0 auto;">
+                            <div class=" footer-grid" style="display: inline-block; width: 32%;float: left;">
+                                <div class="footer-logo">
+                                    <h3><a href="index.php">MPIT</a></h3>
+                                </div>
+                            </div>
+                            <div class=" footer-list" style="display: inline-block; width: 32%;float: left; text-align: left" >
+                                <h3>Servicios</h3>
+                                <ul>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Usuario Final</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Escritorio de Ayuda</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Soporte de Sitio</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Mantenimiento de Hardware</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Soporte de Infraestructura</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Gerencia del Ciclo de Vida de su Tecnología</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Seguridad</a></li>
+                                    <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Consulta y Proyecto</a></li>
+                                </ul>
+                            </div>
+                            <div class="agile-footer-grid" class="contact-footer">
+                                <h3>Contactenos</h3>
+                                <div id="contJormos"  style="color: #A7A5A5; cursor: pointer; margin-top: 15px;" ><a href="contactenos.php" class="footer_contact_me" >Jorge Mosquera</a></div>
+                                <div id="contCharles"  style="color: #A7A5A5; cursor: pointer; margin-top: 15px;"><a href="contactenos.php" class="footer_contact_me" >Charles Chaderton</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+       
         </div>
-
-
-        <!-- footer -->
-        <div class="footer" style="margin-top: 25px;" >
-            <div class="footer-top">
-                <div class="container">
-                    <div class="footer-grids" style="text-align: center; display: block;margin: 0 auto;">
-                        <div class=" footer-grid" style="display: inline-block; width: 32%;float: left;">
-                            <div class="footer-logo">
-                                <h3><a href="index.php">MPIT</a></h3>
-                            </div>
-                        </div>
-                        <div class=" footer-list" style="display: inline-block; width: 32%;float: left; text-align: left" >
-                            <h3>Servicios</h3>
-                            <ul>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Usuario Final</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Escritorio de Ayuda</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Soporte de Sitio</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Mantenimiento de Hardware</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Soporte de Infraestructura</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Gerencia del Ciclo de Vida de su Tecnología</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Seguridad</a></li>
-                                <li style="font-size: 11px;"><i class="fa fa-arrow-right" aria-hidden="true"></i><a>Servicio de Consulta y Proyecto</a></li>
-                            </ul>
-                        </div>
-                        <div class="agile-footer-grid" class="contact-footer">
-                            <h3>Contactenos</h3>
-                            <div id="contJormos"  style="color: #A7A5A5; cursor: pointer; margin-top: 15px;" ><a href="contactenos.php" class="footer_contact_me" >Jorge Mosquera</a></div>
-                            <div id="contCharles"  style="color: #A7A5A5; cursor: pointer; margin-top: 15px;"><a href="contactenos.php" class="footer_contact_me" >Charles Chaderton</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModalJormos" role="dialog">
-            <div class="modal-dialog">
-                <form action="" method="post" accept-charset="utf-8">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Jorge Mosquera</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div style="display: block">
-                                <p class="send_email_name"><strong>Para:</strong></p>
-                                <p style="display: inline-block; color: #333333">Jorge Mosquera</p>
-                            </div>
-                            <div style="display: block">
-                                <p class="send_email_name"><strong>Asunto:</strong></p>
-                                <p style="display: inline-block; color: #333333">Consulta</p>
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                                <input class="input_modal"type="text" placeholder="De:" value="" id="from" name="from" />
-                            </div>
-                            <div style="display: block;" class="margin_modal container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                                <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <input type="submit" id="sendEmail"  name="sendEmail" class="btn btn-default" value="Enviar" />	
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal fade" id="myModalCharles" role="dialog">
-            <div class="modal-dialog">
-                <form action="" method="post" accept-charset="utf-8">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Charles Chaderton</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div style="display: block">
-                                <p  class="send_email_name"><strong>Para:</strong></p>
-                                <p style="display: inline-block; color: #333333">Charles Chaderton</p>
-                            </div>
-                            <div style="display: block">
-                                <p class="send_email_name"><strong>Asunto:</strong></p>
-                                <p style="display: inline-block; color: #333333">Consulta</p>
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                                <input class="input_modal" type="text" placeholder="De:" value="" id="from" name="from" />
-                            </div>
-                            <div style="display: block" class="margin_modal container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                                <textarea  class="input_modal"  style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <input type="submit" id="sendEmail" name="sendEmail" class="btn btn-default" value="Enviar" />	
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal fade" id="myModalMpitca" role="dialog">
-            <div class="modal-dialog">
-                <form action="" method="post" accept-charset="utf-8">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">MPITCA</h4>
-                        </div>
-                        <div class="modal-body">
-
-                            <div style="display: block">
-                                <p  class="send_email_name"><strong>Para:</strong></p>
-                                <p style="display: inline-block; color: #333333">MPITCA</p>
-                            </div>
-                            <div style="display: block">
-                                <p class="send_email_name"><strong>Asunto:</strong></p>
-                                <p style="display: inline-block; color: #333333">Consulta</p>
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>De:</strong></p>
-                                <input class="input_modal" type="text" placeholder="De:" value="" id="from" name="from" />
-                            </div>
-                            <div style="display: block;" class="margin_modal container_modal_input">
-                                <p class="send_email_name label_hide_modal"><strong>Email:</strong></p>
-                                <input class="input_modal" type="text" placeholder="email:" value="" id="email" name="email" />
-                            </div>
-                            <div style="display: block" class="container_modal_input">
-                                <p  class="send_email_name label_hide_modal" style="display: inline-block;width: 15%; vertical-align: top;"><strong>Contenido:</strong></p>
-                                <textarea  class="input_modal" style="height: 100px;" placeholder="Contenido" id="content_email" name="content_email"  ></textarea>
-                            </div>
-
-
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <input type="submit" id="sendEmail"  name="sendEmail" class="btn btn-default" value="Enviar" />	
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- //footer -->
-        <!--<div class="copyright">
-                <div class="container">
-                        <p>© 2017 Swim Care. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-                </div>
-        </div>-->
+        
         <script src="static/js/responsiveslides.min.js"></script>
 
 
         <script type="text/javascript" src="static/js/move-top.js"></script>
         <script type="text/javascript" src="static/js/easing.js"></script>
         <script type="text/javascript" src="static/js/aos.js"></script>
+        <script type="text/javascript" src="static/js/contact_me.js"></script>
     </script>
     <!-- here stars scrolling icon -->
     <script type="text/javascript">

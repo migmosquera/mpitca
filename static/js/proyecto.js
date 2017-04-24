@@ -19,6 +19,14 @@ function View() {
         var idProyect = $(this)[0].id.replace("button_","");
         controller.sendProyect(idProyect);
     });
+    
+    $("#closet_modal").on('click', function (){
+        $("#container_content_proyect").addClass('labelHide');
+        $("#container_content_sub_proyect").removeClass('labelHide');
+        $(".title_content_proyect").remove();
+        $(".content_proyect").remove();
+        $("#button_closet_modal").remove();
+    });
 
 }
 
@@ -30,20 +38,39 @@ function Controller() {
             "id": id,
         };
         var url = "controller/search_content_proyect.php";
-        console.log(data);
         $.ajax({
             type: "POST",
             url: url,
             data: data,
             success: function (data)
             {   
-                var json = JSON.parse(data);
-               console.log(json);
-               for (var i = 0; i < json.length; i++) {
-                    var counter = json[i];
-                    console.log(counter.content_proyect);
-                }
-               console.log("llego");
+                $("#container_content_proyect").removeClass('labelHide');
+                $("#container_content_sub_proyect").addClass('labelHide');
+                
+                if (data == 'No trae Nada'){
+                    var p = '<p id="title_content_proyect" class="title_content_proyect"> No hay Proyectos configurado </p>';
+                    $('#container_content_proyect').append(p); 
+                }else{
+                    var json = JSON.parse(data);
+                    for (var i = 0; i < json.length; i++) {
+                        var counter = json[i];
+                        var container = '<div id="container_proyect_content">' 
+                        var p = '<p id="title_content_proyect" class="title_content_proyect"><strong>'+counter.name_company+'</strong> </p>';
+                        var div = '<div id="content_proyect" class="content_proyect"> '+counter.content_proyect+' </div>';
+                        container += '</div>'
+                        $('#container_content_proyect').append(container,p,div);
+                    }
+                }    
+                var button = '<p id="closet_modal" class="button_closet_modal">Cerrar</p>';
+                $('#container_content_proyect').append(button); 
+                
+                $("#closet_modal").on('click', function (){
+                    $("#container_content_proyect").addClass('labelHide');
+                    $("#container_content_sub_proyect").removeClass('labelHide');
+                    $(".title_content_proyect").remove();
+                    $(".content_proyect").remove();
+                    $(".button_closet_modal").remove();
+                });
             }
         });
     };
