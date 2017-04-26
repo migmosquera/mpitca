@@ -25,6 +25,7 @@ function View() {
         $("#container_content_sub_proyect").removeClass('labelHide');
         $(".title_content_proyect").remove();
         $(".content_proyect").remove();
+        $(".title_contact_client").remove();
         $("#button_closet_modal").remove();
     });
 
@@ -57,8 +58,13 @@ function Controller() {
                         var container = '<div id="container_proyect_content">' 
                         var p = '<p id="title_content_proyect" class="title_content_proyect"><strong>'+counter.name_company+'</strong> </p>';
                         var div = '<div id="content_proyect" class="content_proyect"> '+counter.content_proyect+' </div>';
+                        if (counter.contact_client == ''){
+                            var contact = '<p id="title_contact_client" class="title_contact_client" style="text-align: left;"><strong>Contacta al Cliente: </strong>'+counter.contact_client+' </p>';
+                        }else{
+                            var contact = ''    
+                        }
                         container += '</div>'
-                        $('#container_content_proyect').append(container,p,div);
+                        $('#container_content_proyect').append(container,p,div,contact);
                     }
                 }    
                 var button = '<p id="closet_modal" class="button_closet_modal">Cerrar</p>';
@@ -68,6 +74,7 @@ function Controller() {
                     $("#container_content_proyect").addClass('labelHide');
                     $("#container_content_sub_proyect").removeClass('labelHide');
                     $(".title_content_proyect").remove();
+                    $(".title_contact_client").remove();
                     $(".content_proyect").remove();
                     $(".button_closet_modal").remove();
                 });

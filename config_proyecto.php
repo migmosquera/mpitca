@@ -10,30 +10,30 @@ include_once 'controller/delete_content.php';
 include_once 'controller/search_content.php';
 ?>
 <html>
-    <head>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
         <title>MPITCA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
         <meta name="keywords" content="" />
-        <meta charset="UTF-8">
+        
         <link rel="stylesheet" href="static/css/global_admin.css" type="text/css" media="all" />
     </head>
     <body style="background-color: #133F54">
         <?php include 'navbar_admin.php' ?>
         <section class="container_section">
             <div class="container_content_config">
-                <p class="title">Configuración de Titulos de Proyectos</p>
+                <p class="title">Configuraci贸n de Clase de Proyectos</p>
                 <div class="sub_container_config">
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <input type="hidden" id="idTitle" name="idTitle" />
-                        <p><strong>Registrar Título de Proyectos</strong></p>
-                        <input type="text" placeholder="Nombre del Titulo" name="textNameTitle" id="textNameTitle" style="width: 250px;margin-bottom: 10px;" required/>
+                        <p><strong>Registrar Clase de Proyectos</strong></p>
+                        <input type="text" placeholder="Nombre del Titulo" name="textNameTitle" id="textNameTitle" style="width: 250px;margin-bottom: 10px;" />
                         <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
                         <p id="imageContainer" class="imagenContainer" ></p>
                         <input type="file" id="imgTitle" name="imgTitle"  style="margin: 0 auto" >
                         <div id="container_delete" class="container_delete_title label_hide">
                             <input value="SI" id="srcImgDelete" name="srcImgDelete" type="hidden" class="label_hide">
-                            <p style="margin-top: 10px;">Deseas Eliminar el Título</p>
+                            <p style="margin-top: 10px;">Deseas Eliminar la Clase</p>
                             <p id="titleDelete" style="margin-bottom:35px"></p>
                             <input value="SI" id="delete" name="delete" type="submit" class="button_delete">
                             <p class="button_not_delete btn_cancelar_titulo" id="notDelete">NO</p>
@@ -47,7 +47,7 @@ include_once 'controller/search_content.php';
                 </div>
                 <hr class="separador" width=75%/>
                 <div class="sub_container_config" style="">
-                    <p><strong>Lista de Títulos de Proyectos</strong></p>
+                    <p><strong>Lista de Clases de Proyectos</strong></p>
                     <div class="container_all_title">
                         <?php foreach ($titlePagination as $item): ?>
                         <div id="containerPhoto_<?php echo $item['id'] ?>" class="container_title_proyect" title="<?php echo $item['name'] ?>" lang="<?php echo $item['img_title'] ?>" align="<?php echo $item['img_title'] ?>">
@@ -74,14 +74,15 @@ include_once 'controller/search_content.php';
                 </div>
             </div>
             <div  class="container_content_config">
-                <p class="title">Configuración de Proyectos</p>
+                <p class="title">Configuraci贸n de Proyectos</p>
                 <div class="sub_container_config">
                     <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="container_title_content_proyect">
                             <input type="hidden" id="idProyect" name="idProyect" />
-                            <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre de la compañia" class="text_name_company" required/>
-                            <select id="title_proyect" name="title_proyect" style="height: 29px;" required>
-                                <option value="" >Seleccione un Título</option>
+                            <input type="text" name="name_company" id="name_company" placeholder="Ingrese el Nombre del Cliente" class="text_name_company" />
+                            <input type="text" name="contact_client" id="contact_client" placeholder="Ingrese el Contacto del Cliente" class="text_name_company" />
+                            <select id="title_proyect" name="title_proyect" style="height: 29px;margin-top: 11px;" >
+                                <option value="" >Seleccione una Clase</option>
                                 <?php foreach ($title_total as $item): ?>
                                     <option id="<?php echo $item['id'] ?>" value="<?php echo $item['id'] ?>" ><?php echo $item['name'] ?></option>
                                 <?php endforeach; ?> 
@@ -108,7 +109,7 @@ include_once 'controller/search_content.php';
                     <p><strong>Lista de Proyectos</strong></p>
                     <div class="container_content_content_proyect">
                         <?php foreach ($proyect as $item): ?>
-                            <div id="containerContent_<?php echo $item['id'] ?>" class="container_content_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>">
+                        <div id="containerContent_<?php echo $item['id'] ?>" class="container_content_proyect" title="<?php echo $item['content_proyect'] ?>" lang="<?php echo $item['name_company'] ?>" align="<?php echo $item['id_title'] ?>" accessKey="<?php echo $item['contact_client'] ?>">
                                 <p style="width: 84%; display: inline-block;"><?php echo $item['name_company'] ?></p>
                             </div>
                         <?php endforeach; ?>

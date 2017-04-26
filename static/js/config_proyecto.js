@@ -67,6 +67,8 @@ function View() {
     $('.container_content_proyect').on("click",function (){
         tinyMCE.activeEditor.setContent('');
         var idProyect = $(this)[0].id;
+        console.log($(this)[0].accessKey);
+        $("#contact_client").val($(this)[0].accessKey);
         $("#idProyect").val(idProyect.replace('containerContent_',''));
         $("#nameCompanyDelete").text($(this)[0].lang);
         $("#btnEditarContent").removeClass('label_hide');
@@ -80,6 +82,7 @@ function View() {
     $("#btnEliminarContent").on("click", function () {
         $("#title_proyect").addClass('label_hide');
         $("#name_company").addClass('label_hide');
+        $("#contact_client").addClass('label_hide');
         $(".tinymce").addClass('label_hide');
         $("#mceu_11").addClass('label_hide');
         $("#container_delete_content").removeClass('label_hide');
@@ -88,6 +91,7 @@ function View() {
     $(".btn_cancelar_content").on('click',function (){
         tinyMCE.activeEditor.setContent('');
         $("#idProyect").val('');
+        $("#contact_client").val('');
         $("#name_company").val('');
         $('#title_proyect option[value=""]').prop('selected', true);
         $("#title_proyect").removeClass('label_hide');
