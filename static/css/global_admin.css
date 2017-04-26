@@ -88,11 +88,9 @@
     margin-bottom: 22px;
 }
 .container_content_proyect{
-    max-width: 450px; 
     width: 100%; 
     display: inline-block; 
     text-align: center; 
-    margin-right: 10px; 
     vertical-align: top;
     cursor: pointer 
 }
@@ -116,9 +114,6 @@
 }
 .container_all_title{
     height: 196px;
-}
-.container_content_content_proyect{
-    height: 327px;
 }
 .separador{
     border-color: rgb(0, 42, 117);

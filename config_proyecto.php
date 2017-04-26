@@ -98,7 +98,7 @@ include_once 'controller/search_content.php';
                         <p class="msj_proyect" id="msjTitle"><?php echo $msjSaveContent ; ?></p>
                         <div class="container_button">
                             <input type="submit" value="Guardar" id="btnSaveContent" name="btnSaveContent"/>
-                            <input type="submit" name="btnEditarContent" id="btnEditarContent" value="Editar" class="label_hide">
+                            <input type="submit" name="btnEditarContent" id="btnEditarContent" value="Guardar" class="label_hide">
                             <input type="button" name="btnEliminarContent" id="btnEliminarContent" value="Eliminar" class="label_hide">
                             <input type="button" name="btnCancelarContent" id="btnCancelarContent" class="btn_cancelar_content label_hide" value="Cancelar" >
                         </div>
