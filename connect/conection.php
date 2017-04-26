@@ -1,7 +1,7 @@
 <?php
 
 class Conection extends PDO {
-    private $dns = 'mysql:dbname=mpitcaP;host=127.0.0.1';
+    private $dns = 'mysql:dbname=mpitca;host=127.0.0.1';
 	
 	public function __construct() {
 		try {
