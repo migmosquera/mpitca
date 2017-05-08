@@ -10,7 +10,7 @@ if (isset($_POST['sendEmail'])) {
     require_once 'controller/email/PHPMailerAutoload.php';
     require_once 'controller/email/class.phpmailer.php';
     $name = $_POST['name_contact'];
-    $email = $_POST['email_contact'];
+    $correo_electronico = $_POST['email_contact'];
     $telefono = $_POST['tel_contact'];
     $comment = $_POST['content_contact'];
     $servicio = $_POST['title_contact'];
@@ -29,7 +29,7 @@ if (isset($_POST['sendEmail'])) {
     $correo->Subject = "correo enviado por '$name'";
     $correo->MsgHTML("<div style='width: 100%;'><strong> Servicio:</strong> $servicio </div></br> "
             . "<div style='width: 100%;'><strong>Mensaje enviado por el usuario:</strong> $name </div></br> "
-            . "<div style='width: 100%;'><strong> Email:</strong> $email </div></br> "
+            . "<div style='width: 100%;'><strong> Email:</strong> $correo_electronico </div></br> "
             . "<div style='width: 100%;'><strong>Telefono:</strong> $telefono </div></br> "
             . "<div style='width: 100%;'><strong> Mensaje:</strong> $comment  </div>");
     if (!$correo->Send()) {
