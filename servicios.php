@@ -55,7 +55,7 @@
                                     <li><a class="active"href="servicios.php" class="scroll">Servicios</a></li>
                                     <li><a href="beneficio.php" class="scroll">Beneficios</a></li>
                                     <li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
-                                    <li><a href="proyecto.php" class="scroll">Poyectos Realizados</a></li>
+                                    <li><a href="proyecto.php" class="scroll">Proyectos Realizados</a></li>
                                     <li><a href="contactenos.php" class="scroll">Contáctenos</a></li> 
 
                                 </ul>

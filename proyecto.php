@@ -60,7 +60,7 @@
                                     <li><a href="servicios.php" class="scroll">Servicios</a></li>
                                     <li><a href="beneficio.php" class="scroll">Beneficios</a></li>
                                     <li><a href="nosotros.php" class="scroll">Sobre Nosotros</a></li>	
-                                    <li><a class="active" href="proyecto.php" class="scroll">Poyectos Realizados</a></li>
+                                    <li><a class="active" href="proyecto.php" class="scroll">Proyectos Realizados</a></li>
                                     <li><a href="contactenos.php" class="scroll">Contáctenos</a></li> 
 
                                 </ul>
@@ -78,7 +78,7 @@
             <div class="container_servicios">
                 <div style="display: block">
                     <div class="linea_degradada_izquierda"></div>
-                    <h3 class="title_serivicios" style="font-size: 21px">Proyectos Realizados</h3>	
+                    <h3 class="title_serivicios" id="title_servicios" style="font-size: 21px">Proyectos Realizados</h3>	
                     <div class="linea_degradada_derecha"></div>
                 </div>
                
@@ -91,7 +91,7 @@
                                         <img style="border-radius: 5px;" src="<?php echo $item['img_title'] ?>" />
                                     </div>
                                 </div>
-                                <button type="button" id="button_<?php echo $item['id'] ?>" class="text_more_info">Ver Información</button>
+                                <button type="button" id="button_<?php echo $item['id'] ?>" class="text_more_info" name="<?php echo $item['name'] ?>">Ver Información</button>
                         </div>
                     <?php endforeach; ?> 
                 </div>
