@@ -61,10 +61,7 @@ function View() {
         }
     });
    
-    $('.flexslider').flexslider({
-        animation: "slide"
-    });
-   
+    
 
 }
 

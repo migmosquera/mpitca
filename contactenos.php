@@ -156,6 +156,11 @@
                             <div class=" footer-grid" style="display: inline-block; width: 32%;float: left;">
                                 <div class="footer-logo">
                                     <h3><a href="index.php">MPIT</a></h3>
+                                    <div>
+                                        <p><a href="https://twitter.com/MPIT_CA" class="twitter-follow-button" data-show-count="false">Siga @MPIT_CA</a>			                                        
+                                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" footer-list" style="display: inline-block; width: 32%;float: left; text-align: left" >

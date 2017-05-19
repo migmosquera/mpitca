@@ -88,7 +88,7 @@
                                 <h4 class="title_proyecto"><?php echo $item['name'] ?></h4>
                                 <div id="" class="sub_container_proyect">
                                     <div class="container_imagen_proyecto">
-                                        <img style="border-radius: 5px;" src="<?php echo $item['img_title'] ?>" />
+                                        <img style="border-radius: 5px;width: 250px; height: 180px;" src="<?php echo $item['img_title'] ?>" />
                                     </div>
                                 </div>
                                 <button type="button" id="button_<?php echo $item['id'] ?>" class="text_more_info" name="<?php echo $item['name'] ?>">Ver Información</button>
@@ -109,6 +109,11 @@
                         <div class=" footer-grid" style="display: inline-block; width: 32%;float: left;">
                             <div class="footer-logo">
                                 <h3><a href="index.php">MPIT</a></h3>
+                                <div>
+                                <p><a href="https://twitter.com/MPIT_CA" class="twitter-follow-button" data-show-count="false">Siga @MPIT_CA</a>			                                        
+                                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </p>
+                            </div>
                             </div>
                         </div>
                         <div class=" footer-list" style="display: inline-block; width: 32%;float: left; text-align: left" >

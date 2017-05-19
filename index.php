@@ -1,10 +1,9 @@
+
 <!DOCTYPE html>
-<?php
-?>
 <html lang="en">
 
     <head>
-        <title>MPITCA</title>
+        <title>MPIT C.A.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="" />
@@ -16,13 +15,15 @@
         <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
         <!--// css -->
         <link href="static/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="all" />
+       
         <script src="static/js/jquery-1.11.1.min.js"></script>
         <script src="static/js/bootstrap.js"></script>
         <!-- light-box -->
         <script src="static/js/SmoothScroll.min.js"></script>
         <link rel="stylesheet" href="static/css/aos.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="static/css/twitter.css" type="text/css" media="all" />
         <link rel="stylesheet" href="static/css/index.css" type="text/css" media="all" />
+        
     </head>
     <body>
         <!-- banner -->
@@ -30,16 +31,19 @@
             <div class="header">
                 <div class="container container_header">
                     <div class="header-left">
-                        <div class="w3layouts-logo">
+                      <div class="w3layouts-logo">
                             <h1>
                                 <a class="logo_web" href="index.php"><img src="static/images/mpitca.png"  /></a>
                                 <a class="logo_mobil" href="index.php"><img src="static/images/mpitca_mobile.png"  /></a>
                             </h1>
+					
                         </div>
-                        <!--<div class="agileinfo-social-grids">
+                        <!--<div class="agileinfo-social-grids" align="right">
                                 <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                          
+                                          <a href="https://twitter.com/MPIT_CA" class="twitter-follow-button" data-show-count="false">Follow @MPIT_CA</a>			                                        
+                                          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 </ul>
                         </div>-->
 
@@ -71,6 +75,7 @@
                                 </ul>
 
                             </div><!-- /.navbar-collapse -->
+							
                         </div><!-- /.container-fluid -->
                     </nav>        
                     <div class="clearfix"> </div>
@@ -83,12 +88,12 @@
                     <div class="carousel-inner" style="display: block" role="listbox">
 
                         <div class="item active sub_container_carrousel">
-                            <img class="display_inline image_none" src="static/images/redes.png" >
+                            <p><img class="display_inline image_none" src="static/images/redes.png" >                            </p>
                             <div   class="container_carrousel_text">
                                 <h3  >Instalación y Configuración de Plataformas de Red</h3>
                                 <p>MPIT te apoya en la instalación y configuración de equipos, Cableado Estructurado, Routers, Switches, Firewalls, Ambientes inalámbricos y mucho mas.</p>
                             </div>
-                        </div>
+                      </div>
 
                         <div class="item carousel_caption sub_container_carrousel">
                             <div class="container_carrousel_text" >
@@ -293,16 +298,30 @@
                 <div class="clearfix"> </div>
             </div>
         </div>
+        <div id="twitter" class="twitter">
+            <div id="twitterImagen">
+                <img class="img_twitter" src="static/images/twitter-icono.png" alt="">
+                <p class="title_time_line">Timeline Twitter</p>
+            </div>
+            <div id="feedTwitter" style="margin-top: 2%; text-align: center">
+                <div id="example1"></div>
+            </div>
+        </div>
     </div>
 
     <!-- footer -->
-    <div class="footer" style="margin-top: 25px;" >
+    <div class="footer"  >
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grids" style="text-align: center; display: block;margin: 0 auto;">
                     <div class=" footer-grid" style="display: inline-block; width: 32%;float: left;">
                         <div class="footer-logo">
                             <h3><a href="index.php">MPIT</a></h3>
+                            <div>
+                                <p><a href="https://twitter.com/MPIT_CA" class="twitter-follow-button" data-show-count="false">Siga @MPIT_CA</a>			                                        
+                                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class=" footer-list" style="display: inline-block; width: 32%;float: left; text-align: left" >
@@ -334,8 +353,8 @@
     <script type="text/javascript" src="static/js/easing.js"></script>
     <script type="text/javascript" src="static/js/aos.js"></script>
     <script type="text/javascript" src="static/js/animateCarrousel.js"></script>
-    <script type="text/javascript" src="static/js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
+    <script type="text/javascript" src="static/js/twitter.js"></script>
     <script type="text/javascript">
   
     </script>

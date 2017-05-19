@@ -66,4 +66,7 @@
     .container_left_mision{
         width: 100%;
     }
+    .container_certificate{
+        display: none;
+    }
 }
