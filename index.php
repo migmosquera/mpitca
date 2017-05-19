@@ -304,7 +304,7 @@
                 <p class="title_time_line">Timeline Twitter</p>
             </div>
             <div id="feedTwitter" style="margin-top: 2%; text-align: center">
-                <div id="example1"></div>
+                <a class="twitter-timeline"  href="https://twitter.com/MPIT_CA" data-width="1100"data-height="300"  data-chrome="noheader noborders nofooter">Tweets by MPIT_CA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </div>
@@ -354,7 +354,6 @@
     <script type="text/javascript" src="static/js/aos.js"></script>
     <script type="text/javascript" src="static/js/animateCarrousel.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
-    <script type="text/javascript" src="static/js/twitter.js"></script>
     <script type="text/javascript">
   
     </script>
